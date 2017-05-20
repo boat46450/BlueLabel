@@ -11,4 +11,11 @@
     <BACKCAM>กล้องความละเอียด 12MP,รูรับแสงขนาด ƒ/1.8</BACKCAM>
     <BATTARY>1,960 mAh</BATTARY>
     <OTHER>ตัวเครื่องกันน้ำ กันฝุ่น ระดับ IP67</OTHER>
+    <IMAGE>
+        assets/img/mobile/iphone7/jetblack.png,
+        assets/img/mobile/iphone7/black.png,
+        assets/img/mobile/iphone7/silver.png,
+        assets/img/mobile/iphone7/gold.png,
+        assets/img/mobile/iphone7/rosegold.png
+    </IMAGE>
 </CATALOG>
