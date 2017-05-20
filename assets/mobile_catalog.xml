@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CATALOG>
-    <MOBILE></MOBILE>
+    <MOBILE>iPhone7</MOBILE>
+    <OS>IOS 10</OS>
+    <SIZE>138.3*67.1*7.1 มิลลิเมตร</SIZE>
+    <MEMORY>32,128,256</MEMORY>
+    <COLOR>Jet Black,Black,Sliver,Gold,Rose Gold</COLOR>
+    <SHIP>A10 Fusion พร้อมสถาปัตยกรรม 64 บิต,โปรเซสเซอร์ร่วม M10 สำหรับประมวลผลการเคลื่อนไหวในตัว</SHIP>
+    <SCREEN>หน้าจอ 4.7 นิ้ว ความละเอียด 1334 x 750 พิกเซลที่ 326 ppi</SCREEN>
+    <FRONTCAM>กล้องความละเอียด 7MP,รูรับแสงขนาด ƒ/2.2</FRONTCAM>
+    <BACKCAM>กล้องความละเอียด 12MP,รูรับแสงขนาด ƒ/1.8</BACKCAM>
+    <BATTARY>1,960 mAh</BATTARY>
+    <OTHER>ตัวเครื่องกันน้ำ กันฝุ่น ระดับ IP67</OTHER>
 </CATALOG>
