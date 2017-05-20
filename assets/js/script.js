@@ -1,98 +1,83 @@
 var position = '#home';
+var product = ["#ssgs8","#ip7","#ipse","#hp9","#np1"];
 
 $(document).ready(function(){
-  $('.bp1').click(function (e) {
+  $('.bssgs8').click(function (e) {
     $(position).css({top: '-100%'});
-    $('#p1').css({top: '0'});
-    $('#p1').addClass('front');
-    $('#p1').removeClass('back');
+    $('#ssgs8').css({top: '0'});
+    $('#ssgs8').addClass('front');
+    $('#ssgs8').removeClass('back');
     setTimeout(function(){
         $(position).removeClass('transition');
         $(position).addClass('back');
         $(position).removeClass('front');
         $(position).css({top: '100%'});
         $(position).addClass('transition');
-        position = '#p1';
+        position = '#ssgs8';
     },2000);
     e.stopPropagation();
   });
 
-  $('.bp2').click(function (e) {
+  $('.bip7').click(function (e) {
     $(position).css({top: '-100%'});
-    $('#p2').css({top: '0'});
-    $('#p2').addClass('front');
-    $('#p2').removeClass('back');
+    $('#ip7').css({top: '0'});
+    $('#ip7').addClass('front');
+    $('#ip7').removeClass('back');
     setTimeout(function(){
         $(position).removeClass('transition');
         $(position).addClass('back');
         $(position).removeClass('front');
         $(position).css({top: '100%'});
         $(position).addClass('transition');
-        position = '#p2';
+        position = '#ip7';
     },2000);
     e.stopPropagation();
   });
 
-  $('.bp3').click(function (e) {
+  $('.bipse').click(function (e) {
     $(position).css({top: '-100%'});
-    $('#p3').css({top: '0'});
-    $('#p3').addClass('front');
-    $('#p3').removeClass('back');
+    $('#ipse').css({top: '0'});
+    $('#ipse').addClass('front');
+    $('#ipse').removeClass('back');
     setTimeout(function(){
         $(position).removeClass('transition');
         $(position).addClass('back');
         $(position).removeClass('front');
         $(position).css({top: '100%'});
         $(position).addClass('transition');
-        position = '#p3';
+        position = '#ipse';
     },2000);
     e.stopPropagation();
   });
 
-  $('.bp4').click(function (e) {
+  $('.bhp9').click(function (e) {
     $(position).css({top: '-100%'});
-    $('#p4').css({top: '0'});
-    $('#p4').addClass('front');
-    $('#p4').removeClass('back');
+    $('#hp9').css({top: '0'});
+    $('#hp9').addClass('front');
+    $('#hp9').removeClass('back');
     setTimeout(function(){
         $(position).removeClass('transition');
         $(position).addClass('back');
         $(position).removeClass('front');
         $(position).css({top: '100%'});
         $(position).addClass('transition');
-        position = '#p4';
+        position = '#hp9';
     },2000);
     e.stopPropagation();
   });
 
-  $('.bp5').click(function (e) {
+  $('.bnp1').click(function (e) {
     $(position).css({top: '-100%'});
-    $('#p5').css({top: '0'});
-    $('#p5').addClass('front');
-    $('#p5').removeClass('back');
+    $('#np1').css({top: '0'});
+    $('#np1').addClass('front');
+    $('#np1').removeClass('back');
     setTimeout(function(){
         $(position).removeClass('transition');
         $(position).addClass('back');
         $(position).removeClass('front');
         $(position).css({top: '100%'});
         $(position).addClass('transition');
-        position = '#p5';
-    },2000);
-    e.stopPropagation();
-  });
-
-  $('.bp6').click(function (e) {
-    $(position).css({top: '-100%'});
-    $('#p6').css({top: '0'});
-    $('#p6').addClass('front');
-    $('#p6').removeClass('back');
-    setTimeout(function(){
-        $(position).removeClass('transition');
-        $(position).addClass('back');
-        $(position).removeClass('front');
-        $(position).css({top: '100%'});
-        $(position).addClass('transition');
-        position = '#p6';
+        position = '#np1';
     },2000);
     e.stopPropagation();
   });
