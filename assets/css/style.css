@@ -19,33 +19,13 @@
     height: 100%;
     overflow: auto;
 }
-#home {
-    background-color: red;
-}
-#ssgs8 {
-    background-color: green;
-}
-#ip7 {
-    background-color: blue;
-}
-#ipse {
-    background-color: pink;
-}
-#hp9 {
-    background-color: gray;
-}
-#np1 {
-    background-color: olivedrab;
-}
-#cart {
-    background-color: tomato;
+.flow {
+    top: -100%;
 }
 .front {
-    z-index: 10;
     top: 0;
 }
 .back {
-    z-index: 0;
     top: 100%;
 }
 .transition {
