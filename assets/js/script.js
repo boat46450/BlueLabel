@@ -2,6 +2,13 @@ var position = '#home';
 var product = ["#ssgs8","#ip7","#ipse","#hp9","#np1"];
 
 $(document).ready(function(){
+    //AJAX
+    $.ajax({url: "assets/mobile_catalog.xml", success: function(result){
+        var $result = $(result);
+        console.log(getName($result,0));
+    }});
+
+    //Main Function
     $('.bssgs8').click(function (e) {
         $(position).addClass('flow');
         $(position).removeClass('front');
@@ -121,3 +128,8 @@ $(document).ready(function(){
         e.stopPropagation();
     });
 });
+
+// function for AJAX
+function getName(xml,i) {
+    return xml.find("NAME:eq(" + i + ")").text();
+}
