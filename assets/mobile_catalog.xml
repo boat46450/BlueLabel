@@ -19,3 +19,24 @@
         assets/img/mobile/iphone7/rosegold.png
     </IMAGE>
 </CATALOG>
+
+<CATALOG>
+    <MOBILE>Samsung Galaxy S8</MOBILE>
+    <OS>Android 7.0 (Nougat)</OS>
+    <SIZE>148.9 x 68.1 x 8 mm, 155g</SIZE>
+    <MEMORY>64</MEMORY>
+    <COLOR>Midnight Black, Orchid Gray, Coral Blue, Arctic Silver, Maple Gold</COLOR>
+    <SHIP>Octa-core (2.3GHz Quad + 1.7GHz Quad), 64 bit, 10nm processor</SHIP>
+    <SCREEN>5.8" Quad HD+ Super AMOLED 2960x1440 570ppi</SCREEN>
+    <FRONTCAM>8MP AF F1.7 Aperture Pixel size: 1.22µmSensor size: 1/3.6" FOV: 80 Wide selfie</FRONTCAM>
+    <BACKCAM>Dual Pixel 12MP AF OIS (Optical Image Stabilization) F1.7 Aperture Pixel size: 1.4µm Sensor size: 1/2.55" </BACKCAM>
+    <BATTARY>3000mAh</BATTARY>
+    <OTHER>ดีกว่า iPhone ทุกอย่าง</OTHER>
+    <IMAGE>
+        assets/img/mobile/iphone7/jetblack.png,
+        assets/img/mobile/iphone7/black.png,
+        assets/img/mobile/iphone7/silver.png,
+        assets/img/mobile/iphone7/gold.png,
+        assets/img/mobile/iphone7/rosegold.png
+    </IMAGE>
+</CATALOG>
