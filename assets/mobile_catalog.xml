@@ -50,14 +50,14 @@
         <BATTARY>3000 mAh</BATTARY>
         <OTHER>ทำให้มีตัวเครื่องที่สวยงาม ด้วยวิธี diamond-cut edges รอบตัวเครื่อง ด้วยวัสดุอะลูมิเนียมแบบ unibody ที่ใช้ในการสร้างยานอวกาศ</OTHER>
         <IMAGE>
-            assets/img/mobile/huaweip9/buy_panel_hero_1_sandblasted.png,
-            assets/img/mobile/huaweip9/buy_panel_hero_2_sandblasted.png,
             assets/img/mobile/huaweip9/buy_panel_hero_gold_hairline.png,
+            assets/img/mobile/huaweip9/buy_panel_hero_white_ceramic.png,
+            assets/img/mobile/huaweip9/buy_panel_hero_rosegold_sandblasted.png,
             assets/img/mobile/huaweip9/buy_panel_hero_gold_sandblasted.png,
             assets/img/mobile/huaweip9/buy_panel_hero_grey_sandblasted.png,
-            assets/img/mobile/huaweip9/buy_panel_hero_rosegold_sandblasted.png,
             assets/img/mobile/huaweip9/buy_panel_hero_silver_sandblasted.png,
-            assets/img/mobile/huaweip9/buy_panel_hero_white_ceramic.png
+            assets/img/mobile/huaweip9/buy_panel_hero_1_sandblasted.png,
+            assets/img/mobile/huaweip9/buy_panel_hero_2_sandblasted.png
         </IMAGE>
     </MOBILE>
 </CATALOG>
