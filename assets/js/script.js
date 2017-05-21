@@ -1,5 +1,5 @@
 var position = '#home';
-var product = ["#ssgs8","#ip7","#ipse","#hp9","#np1"];
+var product = ["#ssgs8","#ip7","#ip6","#ipse","#hp9","#np1"];
 var ssgs8path = "";
 var ip7path = "";
 var ipsepath = "";
@@ -32,7 +32,6 @@ $(document).ready(function(){
         },2000);
         e.stopPropagation();
     });
-
     $('.bip7').click(function (e) {
         $(position).addClass('flow');
         $(position).removeClass('front');
@@ -49,7 +48,22 @@ $(document).ready(function(){
         },2000);
         e.stopPropagation();
     });
-
+    $('.bip6').click(function (e) {
+        $(position).addClass('flow');
+        $(position).removeClass('front');
+        $('#ip6').addClass('front');
+        $('#ip6').removeClass('back');
+        setTimeout(function(){
+            $(position).removeClass('transition');
+            $(position).addClass('back');
+            $(position).removeClass('flow');
+            setTimeout(function(){
+                $(position).addClass('transition');
+                position = '#ip6';
+            }, 100);
+        },2000);
+        e.stopPropagation();
+    });
     $('.bipse').click(function (e) {
         $(position).addClass('flow');
         $(position).removeClass('front');
@@ -66,7 +80,6 @@ $(document).ready(function(){
         },2000);
         e.stopPropagation();
     });
-
     $('.bhp9').click(function (e) {
         $(position).addClass('flow');
         $(position).removeClass('front');
@@ -83,7 +96,6 @@ $(document).ready(function(){
         },2000);
         e.stopPropagation();
     });
-
     $('.bnp1').click(function (e) {
         $(position).addClass('flow');
         $(position).removeClass('front');
@@ -100,7 +112,6 @@ $(document).ready(function(){
         },2000);
         e.stopPropagation();
     });
-
     $('.bhome').click(function (e) {
         $(position).addClass('flow');
         $(position).removeClass('front');
@@ -117,7 +128,6 @@ $(document).ready(function(){
         },2000);
         e.stopPropagation();
     });
-
     $('.bcart').click(function (e) {
         $(position).addClass('flow');
         $(position).removeClass('front');
