@@ -28,69 +28,87 @@ var np1pic = "";
 $(document).ready(function(){
     console.log("START");
     //AJAX
-    $.ajax({url: "assets/mobile_catalog.xml", success: function(result){
-        console.log("Ajax");
-        var $result = $(result);
-        for(var i = 0; i < 2; i++){
-            $(".name:eq(" + i + ")").text(getName($result,i));
-            $(".os:eq(" + i + ")").text("OS : " + getOs($result,i));
-            $(".size:eq(" + i + ")").text("ขนาด :" + getSize($result,i));
-            $(".ship:eq(" + i + ")").text("Ship :" + getShip($result,i));
-            $(".screen:eq(" + i + ")").text("หน้าจอ :" + getScreen($result,i));
-            $(".frontcam:eq(" + i + ")").text("กล้องหน้า :" + getFrontcam($result,i));
-            $(".backcam:eq(" + i + ")").text("กล้องหลัง :" + getBackcam($result,i));
-            $(".battary:eq(" + i + ")").text("แบตเตอร์รี่ :" + getBattary($result,i));
-            $(".other:eq(" + i + ")").text("อื่นๆ :" + getOther($result,i));
-            
-            var optionMem = "";
+    $.ajax({
+        url: "assets/mobile_catalog.xml",
+        success: function(result){
+            console.log("success");
+            var $result = $(result);
+            for(var i = 0; i < 2; i++){
+                $(".name:eq(" + i + ")").text(getName($result,i));
+                $(".os:eq(" + i + ")").text("OS : " + getOs($result,i));
+                $(".size:eq(" + i + ")").text("ขนาด :" + getSize($result,i));
+                $(".ship:eq(" + i + ")").text("Ship :" + getShip($result,i));
+                $(".screen:eq(" + i + ")").text("หน้าจอ :" + getScreen($result,i));
+                $(".frontcam:eq(" + i + ")").text("กล้องหน้า :" + getFrontcam($result,i));
+                $(".backcam:eq(" + i + ")").text("กล้องหลัง :" + getBackcam($result,i));
+                $(".battary:eq(" + i + ")").text("แบตเตอร์รี่ :" + getBattary($result,i));
+                $(".other:eq(" + i + ")").text("อื่นๆ :" + getOther($result,i));
+                
+                var optionMem = "";
 
-            switch(i)   {
-                case 0:
-                    ssgs8mem = getMemory($result,i);
-                    for (var j = 0; j < ssgs8mem; i++) {
-                        optionMem += "<option value=" + ssgs8mem[i] + ">" + i + "GB</option>";
-                    }
-                    $("#ssgs8mem").append(optionMem);
-                    ssgs8pric = getPrice($result,i);
-                    
-                    ssgs8color = getColor($result,i);
-                    ssgs8pic = getOther($result,i);
-                    break;
-                case 1:
-                    ip7mem = getMemory($result,i);
-                    ip7pric = getPrice($result,i);
-                    ip7color = getColor($result,i);
-                    ip7pic = getOther($result,i);
-                    break;
-                case 2:
-                    ip6mem = getMemory($result,i);
-                    ip6pric = getPrice($result,i);
-                    ip6color = getColor($result,i);
-                    ip6pic = getOther($result,i);
-                    break;
-                case 3:
-                    ipsemem = getMemory($result,i);
-                    ipsepric = getPrice($result,i);
-                    ipsecolor = getColor($result,i);
-                    ipsepic = getOther($result,i);
-                    break;
-                case 4:
-                    hp9mem = getMemory($result,i);
-                    hp9pric = getPrice($result,i);
-                    hp9color = getColor($result,i);
-                    hp9pic = getOther($result,i);
-                    break;
-                case 4:
-                    np1mem = getMemory($result,i);
-                    np1pric = getPrice($result,i);
-                    np1color = getColor($result,i);
-                    np1pic = getOther($result,i);
-                    break;
+                switch(i)   {
+                    case 0:
+                        ssgs8mem = getMemory($result,i);
+                        for (var j = 0; j < ssgs8mem; i++) {
+                            optionMem += "<option value=" + ssgs8mem[i] + ">" + i + "GB</option>";
+                        }
+                        $("#ssgs8mem").append(optionMem);
+                        ssgs8pric = getPrice($result,i);
+                        
+                        ssgs8color = getColor($result,i);
+                        ssgs8pic = getOther($result,i);
+                        break;
+                    case 1:
+                        ip7mem = getMemory($result,i);
+                        ip7pric = getPrice($result,i);
+                        ip7color = getColor($result,i);
+                        ip7pic = getOther($result,i);
+                        break;
+                    case 2:
+                        ip6mem = getMemory($result,i);
+                        ip6pric = getPrice($result,i);
+                        ip6color = getColor($result,i);
+                        ip6pic = getOther($result,i);
+                        break;
+                    case 3:
+                        ipsemem = getMemory($result,i);
+                        ipsepric = getPrice($result,i);
+                        ipsecolor = getColor($result,i);
+                        ipsepic = getOther($result,i);
+                        break;
+                    case 4:
+                        hp9mem = getMemory($result,i);
+                        hp9pric = getPrice($result,i);
+                        hp9color = getColor($result,i);
+                        hp9pic = getOther($result,i);
+                        break;
+                    case 4:
+                        np1mem = getMemory($result,i);
+                        np1pric = getPrice($result,i);
+                        np1color = getColor($result,i);
+                        np1pic = getOther($result,i);
+                        break;
+                }
+                
             }
-            
+        },
+        error: function(result){
+            console.log("error");
+            console.log(result);
+            var $result = $(result);
+            for(var i = 0; i < product.length; i++){
+                $(".name:eq(" + i + ")").text(getName($result,i));
+                $(".os:eq(" + i + ")").text("OS : " + getOs($result,i));
+                $(".size:eq(" + i + ")").text("ขนาด :" + getSize($result,i));
+                $(".ship:eq(" + i + ")").text("Ship :" + getShip($result,i));
+                $(".screen:eq(" + i + ")").text("หน้าจอ :" + getScreen($result,i));
+                $(".frontcam:eq(" + i + ")").text("กล้องหน้า :" + getFrontcam($result,i));
+                $(".backcam:eq(" + i + ")").text("กล้องหลัง :" + getBackcam($result,i));
+                $(".battary:eq(" + i + ")").text("แบตเตอร์รี่ :" + getBattary($result,i));
+                $(".other:eq(" + i + ")").text("อื่นๆ :" + getOther($result,i));
+            }
         }
-        
-    }});
+    });
 
     //Main Function
     $('.bssgs8').click(function (e) {
