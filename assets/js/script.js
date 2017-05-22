@@ -58,7 +58,7 @@ $(document).ready(function(){
                         }
                         $("#ssgs8mem").append(optionMem);
                         ssgs8pric = getPrice($result,i);
-                        $("#ssgs8price").append("ราคา " + ssgs8pric[0]);
+                        $("#ssgs8price").append("ราคา <span id='ssgs8pr'>" + ssgs8pric[0] + "</span> บาท");
                         ssgs8color = getColor($result,i);
                         for (var j = 0; j < ssgs8color.length; j++) {
                             optionCol += "<option value=" + ssgs8color[j] + ">" + ssgs8color[j] + "</option>";
@@ -74,7 +74,7 @@ $(document).ready(function(){
                         }
                         $("#ip7mem").append(optionMem);
                         ip7pric = getPrice($result,i);
-                        $("#ip7price").append("ราคา " + ip7pric[0]);
+                        $("#ip7price").append("ราคา <span id='ip7pr'>" + ip7pric[0] + "</span> บาท");
                         ip7color = getColor($result,i);
                         for (var j = 0; j < ip7color.length; j++) {
                             optionCol += "<option value=" + ip7color[j] + ">" + ip7color[j] + "</option>";
@@ -90,7 +90,7 @@ $(document).ready(function(){
                         }
                         $("#ip6mem").append(optionMem);
                         ip6pric = getPrice($result,i);
-                        $("#ip6price").append("ราคา " + ip6pric[0]);
+                        $("#ip6price").append("ราคา <span id='ip6pr'>" + ip6pric[0] + "</span> บาท");
                         ip6color = getColor($result,i);
                         for (var j = 0; j < ip6color.length; j++) {
                             optionCol += "<option value=" + ip6color[j] + ">" + ip6color[j] + "</option>";
@@ -106,7 +106,7 @@ $(document).ready(function(){
                         }
                         $("#ipsemem").append(optionMem);
                         ipsepric = getPrice($result,i);
-                        $("#ipseprice").append("ราคา " + ipsepric[0]);
+                        $("#ipseprice").append("ราคา <span id='ipsepr'>" + ipsepric[0] + "</span> บาท");
                         ipsecolor = getColor($result,i);
                         for (var j = 0; j < ipsecolor.length; j++) {
                             optionCol += "<option value=" + ipsecolor[j] + ">" + ipsecolor[j] + "</option>";
@@ -122,7 +122,7 @@ $(document).ready(function(){
                         }
                         $("#hp9mem").append(optionMem);
                         hp9pric = getPrice($result,i);
-                        $("#hp9price").append("ราคา " + hp9pric[0]);
+                        $("#hp9price").append("ราคา <span id='hp9pr'>" + hp9pric[0] + "</span> บาท");
                         hp9color = getColor($result,i);
                         for (var j = 0; j < hp9color.length; j++) {
                             optionCol += "<option value=" + hp9color[j] + ">" + hp9color[j] + "</option>";
@@ -138,7 +138,7 @@ $(document).ready(function(){
                         }
                         $("#nl1520mem").append(optionMem);
                         nl1520pric = getPrice($result,i);
-                        $("#nl1520price").append("ราคา " + nl1520pric[0]);
+                        $("#nl1520price").append("ราคา <span id='nl1520pr'>" + nl1520pric[0] + "</span> บาท");
                         nl1520color = getColor($result,i);
                         for (var j = 0; j < nl1520color.length; j++) {
                             optionCol += "<option value=" + nl1520color[j] + ">" + nl1520color[j] + "</option>";
@@ -299,7 +299,7 @@ $(document).ready(function(){
         e.stopPropagation();
     });
 
-    // onchange price
+    // onchange color
     $("#ssgs8color").change(function(){
         var temp = $("#ssgs8color option:selected").index();
         $("#ssgs8p").attr("src", ssgs8pic[temp]);
@@ -323,6 +323,32 @@ $(document).ready(function(){
     $("#nl1520color").change(function(){
         var temp = $("#nl1520color option:selected").index();
         $("#nl1520p").attr("src", nl1520pic[temp]);
+    });
+
+    //onchange price
+    $("#ssgs8mem").change(function(){
+        var temp = $("#ssgs8mem option:selected").index();
+        $("#ssgs8price").html("ราคา <span id='ssgs8pr'>" + ssgs8pric[temp] + "</span> บาท");
+    });
+    $("#ip7mem").change(function(){
+        var temp = $("#ip7mem option:selected").index();
+        $("#ip7price").html("ราคา <span id='ip7pr'>" + ip7pric[temp] + "</span> บาท");
+    });
+    $("#ip6mem").change(function(){
+        var temp = $("#ip6mem option:selected").index();
+        $("#ip6price").html("ราคา <span id='ip6pr'>" + ip6pric[temp] + "</span> บาท");
+    });
+    $("#ipsemem").change(function(){
+        var temp = $("#ipsemem option:selected").index();
+        $("#ipseprice").html("ราคา <span id='ipsepr'>" + ipsepric[temp] + "</span> บาท");
+    });
+    $("#hp9mem").change(function(){
+        var temp = $("#hp9mem option:selected").index();
+        $("#hp9price").html("ราคา <span id='hp9pr'>" + hp9pric[temp] + "</span> บาท");
+    });
+    $("#nl1520mem").change(function(){
+        var temp = $("#nl1520mem option:selected").index();
+        $("#nl1520price").html("ราคา <span id='nl1520pr'>" + nl1520pric[temp] + "</span> บาท");
     });
 });
 
