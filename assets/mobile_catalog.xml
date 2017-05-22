@@ -73,7 +73,7 @@
 		<SCREEN>หน้าจอ 4 นิ้ว แบบ Retina Display ความละเอียด 1136 x 640 พิกเซลที่ 326 ppi</SCREEN>
 		<BACKCAM>กล้องความละเอียด 12 เมกะพิกเซล รูรับแสงขนาด f/2.2</BACKCAM>
 		<FRONTCAM>กล้องความละเอียด 1.2 เมกะพิกเซล รูปรับแสงขนาด f/2.4</FRONTCAM>
-		<BATTERY>1624 mAh</BATTERY>
+		<BATTARY>1624 mAh</BATTARY>
 		<IMAGE>
 			assets/img/mobile/iPhoneSE/iphonese-silver.png
 			assets/img/mobile/iPhoneSE/iphonese-gold.png
@@ -104,7 +104,20 @@
             assets/img/mobile/huaweip9/buy_panel_hero_1_sandblasted.png,
             assets/img/mobile/huaweip9/buy_panel_hero_2_sandblasted.png
         </IMAGE>
+    </MOBILE>
+	<MOBILE>
 		<NAME>Nokia P1</NAME>
 		<OS>Android 7.0 Nougat</OS>
-    </MOBILE>
+		<SIZE></SIZE>
+		<MEMORY></MEMORY>
+		<PRICE></PRICE>
+		<COLOR></COLOR>
+		<SHIP></SHIP>
+		<SCREEN></SCREEN>
+		<FRONTCAM></FRONTCAM>
+		<BACKCAM></BACKCAM>
+		<BATTARY></BATTARY>
+		<OTHER></OTHER>
+		<IMAGE></IMAGE>
+	</MOBILE>
 </CATALOG>
