@@ -5,15 +5,26 @@
         <OS>Android 7.0 (Nougat)</OS>
         <SIZE>148.9 x 68.1 x 8 มิลลิเมตร</SIZE>
         <MEMORY>64</MEMORY>
-        <PRICE></PRICE>
+        <PRICE>25110</PRICE>
         <COLOR>Midnight Black,Orchid Gray,Coral Blue,Arctic Silver,Maple Gold</COLOR>
         <SHIP>Octa-core (2.3GHz Quad + 1.7GHz Quad), 64 bit, 10nm processor</SHIP>
         <SCREEN>5.8" Quad HD+ Super AMOLED 2960x1440 570ppi</SCREEN>
         <FRONTCAM>8MP AF F1.7 Aperture Pixel size: 1.22µmSensor size: 1/3.6" FOV: 80 Wide selfie</FRONTCAM>
         <BACKCAM>Dual Pixel 12MP AF OIS (Optical Image Stabilization) F1.7 Aperture Pixel size: 1.4µm Sensor size: 1/2.55" </BACKCAM>
         <BATTARY>3,000 mAh</BATTARY>
+<<<<<<< HEAD
+        <IMAGE>
+			assets/img/mobile/SSGS8/S8-Black.png,
+			assets/img/mobile/SSGS8/S8-Pink.png,
+			assets/img/mobile/SSGS8/S8-Blue.png,
+			assets/img/mobile/SSGS8/S8-White.png,
+			assets/img/mobile/SSGS8/S8-Gold.png
+		</IMAGE>
+		<OTHER>สแกนม่านตา , กันน้ำ , กันฝุ่น</OTHER>
+=======
         <OTHER></OTHER>
         <IMAGE></IMAGE>
+>>>>>>> ebf7e9cd776601c70c3141afc21f2ade3dceda79
     </MOBILE>
     <MOBILE>
         <NAME>iPhone7</NAME>
@@ -80,4 +91,26 @@
             assets/img/mobile/huaweip9/buy_panel_hero_2_sandblasted.png
         </IMAGE>
     </MOBILE>
+<<<<<<< HEAD
+	<MOBILE>
+		<NAME>iPhone SE</Name>
+		<OS>iOS10</OS>
+		<SIZE>123.8 x 58.6 x 7.6 มิลลิเมตร </SIZE>
+		<MEMORY>32,128</MEMORY>
+		<PRICE>16800 , 20800</PRICE>
+		<COLOR>Sliver,Gold,Space Gray,Rose Gold</COLOR>
+		<CHIP>A9 พร้อมสถาปัตรยากรรม 64 บิต โปรเซสเซอร์ร่วม M9 สำหรับการประมวลผลการเคลื่อนไหวในตัว </CHIP>
+		<SCREEN>หน้าจอ 4 นิ้ว แบบ Retina Display ความละเอียด 1136 x 640 พิกเซลที่ 326 ppi</SCREEN>
+		<BACKCAM>กล้องความละเอียด 12 เมกะพิกเซล รูรับแสงขนาด f/2.2</BACKCAM>
+		<FRONTCAM>กล้องความละเอียด 1.2 เมกะพิกเซล รูปรับแสงขนาด f/2.4</FRONTCAM>
+		<BATTERY>1624 mAh</BATTERY>
+		<IMAGE>
+			assets/img/mobile/iPhoneSE/iphonese-silver.png,
+			assets/img/mobile/iPhoneSE/iphonese-gold.png,
+			assets/img/mobile/iPhoneSE/iphonese-gray.png,
+			assets/img/mobile/iPhoneSE/iphonese-rosegold.png
+		</IMAGE>
+	</MOBILE>
+=======
+>>>>>>> ebf7e9cd776601c70c3141afc21f2ade3dceda79
 </CATALOG>
