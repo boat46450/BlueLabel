@@ -85,5 +85,7 @@
             assets/img/mobile/huaweip9/buy_panel_hero_1_sandblasted.png,
             assets/img/mobile/huaweip9/buy_panel_hero_2_sandblasted.png
         </IMAGE>
+		<NAME>Nokia P1</NAME>
+		<OS>Android 7.0 Nougat</OS>
     </MOBILE>
 </CATALOG>
