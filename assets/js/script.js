@@ -74,12 +74,14 @@ $(document).ready(function(){
                         }
                         $("#ip7mem").append(optionMem);
                         ip7pric = getPrice($result,i);
+                        $("#ip7price").append("ราคา " + ip7pric[0]);
                         ip7color = getColor($result,i);
                         for (var j = 0; j < ip7color.length; j++) {
                             optionCol += "<option value=" + ip7color[j] + ">" + ip7color[j] + "</option>";
                         }
                         $("#ip7color").append(optionCol);
                         ip7pic = getImage($result,i);
+                        $("#ip7p").attr("src", ip7pic[0]);
                         break;
                     case 2:
                         ip6mem = getMemory($result,i);
@@ -88,12 +90,14 @@ $(document).ready(function(){
                         }
                         $("#ip6mem").append(optionMem);
                         ip6pric = getPrice($result,i);
+                        $("#ip6price").append("ราคา " + ip6pric[0]);
                         ip6color = getColor($result,i);
                         for (var j = 0; j < ip6color.length; j++) {
                             optionCol += "<option value=" + ip6color[j] + ">" + ip6color[j] + "</option>";
                         }
                         $("#ip6color").append(optionCol);
                         ip6pic = getImage($result,i);
+                        $("#ip6p").attr("src", ip6pic[0]);
                         break;
                     case 3:
                         ipsemem = getMemory($result,i);
@@ -102,12 +106,14 @@ $(document).ready(function(){
                         }
                         $("#ipsemem").append(optionMem);
                         ipsepric = getPrice($result,i);
+                        $("#ipseprice").append("ราคา " + ipsepric[0]);
                         ipsecolor = getColor($result,i);
                         for (var j = 0; j < ipsecolor.length; j++) {
                             optionCol += "<option value=" + ipsecolor[j] + ">" + ipsecolor[j] + "</option>";
                         }
                         $("#ipsecolor").append(optionCol);
                         ipsepic = getImage($result,i);
+                        $("#ipsep").attr("src", ipsepic[0]);
                         break;
                     case 4:
                         hp9mem = getMemory($result,i);
@@ -116,12 +122,14 @@ $(document).ready(function(){
                         }
                         $("#hp9mem").append(optionMem);
                         hp9pric = getPrice($result,i);
+                        $("#hp9price").append("ราคา " + hp9pric[0]);
                         hp9color = getColor($result,i);
                         for (var j = 0; j < hp9color.length; j++) {
                             optionCol += "<option value=" + hp9color[j] + ">" + hp9color[j] + "</option>";
                         }
                         $("#hp9color").append(optionCol);
                         hp9pic = getImage($result,i);
+                        $("#hp9p").attr("src", hp9pic[0]);
                         break;
                     case 5:
                         nl1520mem = getMemory($result,i);
@@ -130,12 +138,14 @@ $(document).ready(function(){
                         }
                         $("#nl1520mem").append(optionMem);
                         nl1520pric = getPrice($result,i);
+                        $("#nl1520price").append("ราคา " + nl1520pric[0]);
                         nl1520color = getColor($result,i);
                         for (var j = 0; j < nl1520color.length; j++) {
                             optionCol += "<option value=" + nl1520color[j] + ">" + nl1520color[j] + "</option>";
                         }
                         $("#nl1520color").append(optionCol);
                         nl1520pic = getImage($result,i);
+                        $("#nl1520p").attr("src", nl1520pic[0]);
                         break;
                 }
                 
