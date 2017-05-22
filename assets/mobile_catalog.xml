@@ -12,7 +12,6 @@
         <FRONTCAM>8MP AF F1.7 Aperture Pixel size: 1.22µmSensor size: 1/3.6" FOV: 80 Wide selfie</FRONTCAM>
         <BACKCAM>Dual Pixel 12MP AF OIS (Optical Image Stabilization) F1.7 Aperture Pixel size: 1.4µm Sensor size: 1/2.55" </BACKCAM>
         <BATTARY>3,000 mAh</BATTARY>
-        <OTHER>ดีกว่า iPhone ทุกอย่าง</OTHER>
         <IMAGE></IMAGE>
     </MOBILE>
     <MOBILE>
@@ -66,14 +65,17 @@
 		<SIZE>123.8 x 58.6 x 7.6 มิลลิเมตร </SIZE>
 		<MEMORY>32,128</MEMORY>
 		<PRICE>16800 , 20800</PRICE>
-		<COLOR>Sliver,Glod,Space Gray,Rose Gold</COLOR>
+		<COLOR>Sliver,Gold,Space Gray,Rose Gold</COLOR>
 		<CHIP>A9 พร้อมสถาปัตรยากรรม 64 บิต โปรเซสเซอร์ร่วม M9 สำหรับการประมวลผลการเคลื่อนไหวในตัว </CHIP>
 		<SCREEN>หน้าจอ 4 นิ้ว แบบ Retina Display ความละเอียด 1136 x 640 พิกเซลที่ 326 ppi</SCREEN>
 		<BACKCAM>กล้องความละเอียด 12 เมกะพิกเซล รูรับแสงขนาด f/2.2</BACKCAM>
 		<FRONTCAM>กล้องความละเอียด 1.2 เมกะพิกเซล รูปรับแสงขนาด f/2.4</FRONTCAM>
 		<BATTERY>1624 mAh</BATTERY>
 		<IMAGE>
-		
+			assets/img/mobile/iPhoneSE/iphonese-silver.png
+			assets/img/mobile/iPhoneSE/iphonese-gold.png
+			assets/img/mobile/iPhoneSE/iphonese-gray.png
+			assets/img/mobile/iPhoneSE/iphonese-rosegold.png
 		</IMAGE>
 	</MOBILE>
 </CATALOG>
