@@ -60,4 +60,17 @@
             assets/img/mobile/huaweip9/buy_panel_hero_2_sandblasted.png
         </IMAGE>
     </MOBILE>
+	<MOBILE>
+		<NAME>iPhone SE</Name>
+		<OS>iOS10</OS>
+		<SIZE>123.8 x 58.6 x 7.6 มิลลิเมตร </SIZE>
+		<MEMORY>32,128</MEMORY>
+		<PRICE>16800 , 20800</PRICE>
+		<COLOR>Sliver,Glod,Space Gray,Rose Gold</COLOR>
+		<CHIP>A9 พร้อมสถาปัตรยากรรม 64 บิต โปรเซสเซอร์ร่วม M9 สำหรับการประมวลผลการเคลื่อนไหวในตัว </CHIP>
+		<SCREEN>หน้าจอ 4 นิ้ว แบบ Retina Display ความละเอียด 1136 x 640 พิกเซลที่ 326 ppi</SCREEN>
+		<BACKCAM>กล้องความละเอียด 12 เมกะพิกเซล รูรับแสงขนาด f/2.2</BACKCAM>
+		<FRONTCAM>กล้องความละเอียด 1.2 เมกะพิกเซล รูปรับแสงขนาด f/2.4</FRONTCAM>
+		<BATTERY>1624 mAh</BATTERY>
+	</MOBILE>
 </CATALOG>
