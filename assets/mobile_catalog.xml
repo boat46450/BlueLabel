@@ -13,7 +13,13 @@
         <BACKCAM>Dual Pixel 12MP AF OIS (Optical Image Stabilization) F1.7 Aperture Pixel size: 1.4µm Sensor size: 1/2.55" </BACKCAM>
         <BATTARY>3,000 mAh</BATTARY>
         <OTHER>สแกนม่านตา , กันน้ำ , กันฝุ่น</OTHER>
-        <IMAGE></IMAGE>
+        <IMAGE>
+			assets/img/mobile/SSGS8/S8-Black.png,
+			assets/img/mobile/SSGS8/S8-Pink.png,
+			assets/img/mobile/SSGS8/S8-Blue.png,
+			assets/img/mobile/SSGS8/S8-White.png,
+			assets/img/mobile/SSGS8/S8-Gold.png
+		</IMAGE>
     </MOBILE>
     <MOBILE>
         <NAME>iPhone7</NAME>
