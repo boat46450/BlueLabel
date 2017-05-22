@@ -1,5 +1,5 @@
 var position = '#home';
-var product = ["#ssgs8","#ip7","#ip6","#ipse","#hp9","#np1"];
+var product = ["#ssgs8","#ip7","#ip6","#ipse","#hp9","#nl1520"];
 var ssgs8mem = "";
 var ssgs8pric = "";
 var ssgs8color = "";
@@ -194,18 +194,18 @@ $(document).ready(function(){
         },2000);
         e.stopPropagation();
     });
-    $('.bnp1').click(function (e) {
+    $('.bnl1520').click(function (e) {
         $(position).addClass('flow');
         $(position).removeClass('front');
-        $('#np1').addClass('front');
-        $('#np1').removeClass('back');
+        $('#nl1520').addClass('front');
+        $('#nl1520').removeClass('back');
         setTimeout(function(){
             $(position).removeClass('transition');
             $(position).addClass('back');
             $(position).removeClass('flow');
             setTimeout(function(){
                 $(position).addClass('transition');
-                position = '#np1';
+                position = '#nl1520';
             }, 100);
         },2000);
         e.stopPropagation();
