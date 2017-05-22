@@ -20,10 +20,10 @@ var hp9mem = "";
 var hp9pric = "";
 var hp9color = "";
 var hp9pic = "";
-var np1mem = "";
-var np1pric = "";
-var np1color = "";
-var np1pic = "";
+var nl1520mem = "";
+var nl1520pric = "";
+var nl1520color = "";
+var nl1520pic = "";
 
 $(document).ready(function(){
     console.log("START");
@@ -48,6 +48,7 @@ $(document).ready(function(){
                 $(".other:eq(" + i + ")").text("อื่นๆ : " + getOther($result,i));
                 
                 var optionMem = "";
+                var optionCol = "";
 
                 switch(i)   {
                     case 0:
@@ -57,39 +58,84 @@ $(document).ready(function(){
                         }
                         $("#ssgs8mem").append(optionMem);
                         ssgs8pric = getPrice($result,i);
-                        
+                        $("#ssgs8price").append("ราคา " + ssgs8pric[0]);
                         ssgs8color = getColor($result,i);
+                        for (var j = 0; j < ssgs8color.length; j++) {
+                            optionCol += "<option value=" + ssgs8color[j] + ">" + ssgs8color[j] + "</option>";
+                        }
+                        $("#ssgs8color").append(optionCol);
                         ssgs8pic = getOther($result,i);
+                        $("#ssgs8p").attr("src", ""+ssgs8pic[0]);
                         break;
                     case 1:
                         ip7mem = getMemory($result,i);
+                        for (var j = 0; j < ip7mem.length; j++) {
+                            optionMem += "<option value=" + ip7mem[j] + ">" + ip7mem[j] + "GB</option>";
+                        }
+                        $("#ip7mem").append(optionMem);
                         ip7pric = getPrice($result,i);
                         ip7color = getColor($result,i);
+                        for (var j = 0; j < ip7color.length; j++) {
+                            optionCol += "<option value=" + ip7color[j] + ">" + ip7color[j] + "</option>";
+                        }
+                        $("#ip7color").append(optionCol);
                         ip7pic = getOther($result,i);
                         break;
                     case 2:
                         ip6mem = getMemory($result,i);
+                        for (var j = 0; j < ip6mem.length; j++) {
+                            optionMem += "<option value=" + ip6mem[j] + ">" + ip6mem[j] + "GB</option>";
+                        }
+                        $("#ip6mem").append(optionMem);
                         ip6pric = getPrice($result,i);
                         ip6color = getColor($result,i);
+                        for (var j = 0; j < ip6color.length; j++) {
+                            optionCol += "<option value=" + ip6color[j] + ">" + ip6color[j] + "</option>";
+                        }
+                        $("#ip6color").append(optionCol);
                         ip6pic = getOther($result,i);
                         break;
                     case 3:
                         ipsemem = getMemory($result,i);
+                        for (var j = 0; j < ipsemem.length; j++) {
+                            optionMem += "<option value=" + ipsemem[j] + ">" + ipsemem[j] + "GB</option>";
+                        }
+                        $("#ipsemem").append(optionMem);
                         ipsepric = getPrice($result,i);
                         ipsecolor = getColor($result,i);
+                        for (var j = 0; j < ipsecolor.length; j++) {
+                            optionCol += "<option value=" + ipsecolor[j] + ">" + ipsecolor[j] + "</option>";
+                        }
+                        $("#ipsecolor").append(optionCol);
                         ipsepic = getOther($result,i);
                         break;
                     case 4:
                         hp9mem = getMemory($result,i);
+                        for (var j = 0; j < hp9mem.length; j++) {
+                            optionMem += "<option value=" + hp9mem[j] + ">" + hp9mem[j] + "GB</option>";
+                        }
+                        $("#hp9mem").append(optionMem);
                         hp9pric = getPrice($result,i);
                         hp9color = getColor($result,i);
+                        for (var j = 0; j < hp9color.length; j++) {
+                            optionCol += "<option value=" + hp9color[j] + ">" + hp9color[j] + "</option>";
+                        }
+                        $("#hp9color").append(optionCol);
                         hp9pic = getOther($result,i);
                         break;
-                    case 4:
-                        np1mem = getMemory($result,i);
-                        np1pric = getPrice($result,i);
-                        np1color = getColor($result,i);
-                        np1pic = getOther($result,i);
+                    case 5:
+                        nl1520mem = getMemory($result,i);
+                        for (var j = 0; j < nl1520mem.length; j++) {
+                            optionMem += "<option value=" + nl1520mem[j] + ">" + nl1520mem[j] + "GB</option>";
+                        }
+                        $("#nl1520mem").append(optionMem);
+                        nl1520pric = getPrice($result,i);
+                        nl1520color = getColor($result,i);
+                        for (var j = 0; j < nl1520color.length; j++) {
+                            optionCol += "<option value=" + nl1520color[j] + ">" + nl1520color[j] + "</option>";
+                        }
+                        $("#nl1520color").append(optionCol);
+                        nl1520pic = getOther($result,i);
                         break;
                 }
                 
@@ -242,6 +288,9 @@ $(document).ready(function(){
         },2000);
         e.stopPropagation();
     });
+
+    // onchange price
+    
 });
 
 // function for AJAX
