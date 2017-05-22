@@ -119,10 +119,10 @@
 		<BATTARY>3400 mAh</BATTARY>
 		<OTHER>ฟรีพื้นที่เก็บข้อมูลขนาด 7 GB บน Onedrive</OTHER>
 		<PIC>
-			assets/img/mobile/huaweip9/Lumia-Yellow.png
-			assets/img/mobile/huaweip9/Lumia-Red.png
-			assets/img/mobile/huaweip9/Lumia-White.png
-			assets/img/mobile/huaweip9/Lumia-Black.png
+			assets/img/mobile/NokiaLumia1520/Lumia-Yellow.png,
+			assets/img/mobile/NokiaLumia1520/Lumia-Red.png,
+			assets/img/mobile/NokiaLumia1520/Lumia-White.png,
+			assets/img/mobile/NokiaLumia1520/Lumia-Black.png
 		</PIC>
 	</MOBILE>
 </CATALOG>
