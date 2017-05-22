@@ -48,6 +48,7 @@
 		<BACKCAM>กล้องความละเอียด 12 เมกะพิกเซล รูรับแสงขนาด f/2.2</BACKCAM>
 		<FRONTCAM>กล้องความละเอียด 1.2 เมกะพิกเซล รูปรับแสงขนาด f/2.4</FRONTCAM>
 		<BATTERY>1624 mAh</BATTERY>
+        <OTHER>-</OTHER>
 		<IMAGE>
 			assets/img/mobile/iPhoneSE/iphonese-silver.png
 			assets/img/mobile/iPhoneSE/iphonese-gold.png

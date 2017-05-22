@@ -26,8 +26,10 @@ var np1color = "";
 var np1pic = "";
 
 $(document).ready(function(){
+    console.log("START");
     //AJAX
     $.ajax({url: "assets/mobile_catalog.xml", success: function(result){
+        console.log("Ajax");
         var $result = $(result);
         for(var i = 0; i < 2; i++){
             $(".name:eq(" + i + ")").text(getName($result,i));
@@ -39,10 +41,18 @@ $(document).ready(function(){
             $(".backcam:eq(" + i + ")").text("กล้องหลัง :" + getBackcam($result,i));
             $(".battary:eq(" + i + ")").text("แบตเตอร์รี่ :" + getBattary($result,i));
             $(".other:eq(" + i + ")").text("อื่นๆ :" + getOther($result,i));
+            
+            var optionMem = "";
+
             switch(i)   {
                 case 0:
                     ssgs8mem = getMemory($result,i);
+                    for (var j = 0; j < ssgs8mem; i++) {
+                        optionMem += "<option value=" + ssgs8mem[i] + ">" + i + "GB</option>";
+                    }
+                    $("#ssgs8mem").append(optionMem);
                     ssgs8pric = getPrice($result,i);
+                    
                     ssgs8color = getColor($result,i);
                     ssgs8pic = getOther($result,i);
                     break;
