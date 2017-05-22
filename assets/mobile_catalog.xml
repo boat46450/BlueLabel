@@ -10,16 +10,16 @@
         <SHIP>Octa-core (2.3GHz Quad + 1.7GHz Quad), 64 bit, 10nm processor</SHIP>
         <SCREEN>5.8" Quad HD+ Super AMOLED 2960x1440 570ppi</SCREEN>
         <FRONTCAM>8MP AF F1.7 Aperture Pixel size: 1.22µmSensor size: 1/3.6" FOV: 80 Wide selfie</FRONTCAM>
-        <BACKCAM>Dual Pixel 12MP AF OIS (Optical Image Stabilization) F1.7 Aperture Pixel size: 1.4µm Sensor size: 1/2.55"</BACKCAM>
+        <BACKCAM>Dual Pixel 12MP AF OIS (Optical PIC Stabilization) F1.7 Aperture Pixel size: 1.4µm Sensor size: 1/2.55"</BACKCAM>
         <BATTARY>3,000 mAh</BATTARY>
         <OTHER>สแกนม่านตา,กันน้ำ,กันฝุ่น</OTHER>
-        <IMAGE>
+        <PIC>
 			assets/img/mobile/SSGS8/S8-Black.png,
 			assets/img/mobile/SSGS8/S8-Pink.png,
 			assets/img/mobile/SSGS8/S8-Blue.png,
 			assets/img/mobile/SSGS8/S8-White.png,
 			assets/img/mobile/SSGS8/S8-Gold.png
-		</IMAGE>
+		</PIC>
     </MOBILE>
     <MOBILE>
         <NAME>iPhone7</NAME>
@@ -34,13 +34,13 @@
         <BACKCAM>กล้องความละเอียด 12MP รูรับแสงขนาด ƒ/1.8</BACKCAM>
         <BATTARY>1,960 mAh</BATTARY>
         <OTHER>ตัวเครื่องกันน้ำ กันฝุ่น ระดับ IP67</OTHER>
-        <IMAGE>
+        <PIC>
             assets/img/mobile/iphone7/jetblack.png,
             assets/img/mobile/iphone7/black.png,
             assets/img/mobile/iphone7/silver.png,
             assets/img/mobile/iphone7/gold.png,
             assets/img/mobile/iphone7/rosegold.png
-        </IMAGE>
+        </PIC>
     </MOBILE>
     <MOBILE>
         <NAME>iPhone 6</NAME>
@@ -55,12 +55,12 @@
         <BACKCAM> กล้องดิจิตอล 8 ล้านพิกเซล (Digital Camera) รูรับแสงขนาด ƒ/2.2</BACKCAM>
         <BATTARY>1,810 mAh</BATTARY>
         <OTHER>ผลิตจากวัสดุที่ปราศจาก PVC,นิกเกิลบนพื้นผิวผลิตภัณฑ์,แอนติโมนี,ไตรออกไซด์</OTHER>
-        <IMAGE>
+        <PIC>
           assets/img/mobile/iPhone6/Iphone6.png,
           assets/img/mobile/iPhone6/gold.png,
           assets/img/mobile/iPhone6/silver.png,
           assets/img/mobile/iPhone6/spacegray.png
-        </IMAGE>
+        </PIC>
     </MOBILE>
     <MOBILE>
 		<NAME>iPhone SE</Name>
@@ -74,12 +74,12 @@
 		<BACKCAM>กล้องความละเอียด 12 เมกะพิกเซล รูรับแสงขนาด f/2.2</BACKCAM>
 		<FRONTCAM>กล้องความละเอียด 1.2 เมกะพิกเซล รูปรับแสงขนาด f/2.4</FRONTCAM>
 		<BATTARY>1624 mAh</BATTARY>
-		<IMAGE>
+		<PIC>
 			assets/img/mobile/iPhoneSE/iphonese-silver.png,
 			assets/img/mobile/iPhoneSE/iphonese-gold.png,
 			assets/img/mobile/iPhoneSE/iphonese-gray.png,
 			assets/img/mobile/iPhoneSE/iphonese-rosegold.png
-		</IMAGE>
+		</PIC>
 	</MOBILE>
     <MOBILE>
         <NAME>Huawei P9</NAME>
@@ -94,7 +94,7 @@
         <BACKCAM>Dual 12 MP, f/2.2, 27 mm, Leica optics, phase detection, laser autofocus, dual-LED (dual tone) flash</BACKCAM>
         <BATTARY>3000 mAh</BATTARY>
         <OTHER>ทำให้มีตัวเครื่องที่สวยงาม ด้วยวิธี diamond-cut edges รอบตัวเครื่อง ด้วยวัสดุอะลูมิเนียมแบบ unibody ที่ใช้ในการสร้างยานอวกาศ</OTHER>
-        <IMAGE>
+        <PIC>
             assets/img/mobile/huaweip9/buy_panel_hero_gold_hairline.png,
             assets/img/mobile/huaweip9/buy_panel_hero_white_ceramic.png,
             assets/img/mobile/huaweip9/buy_panel_hero_rosegold_sandblasted.png,
@@ -103,7 +103,7 @@
             assets/img/mobile/huaweip9/buy_panel_hero_silver_sandblasted.png,
             assets/img/mobile/huaweip9/buy_panel_hero_1_sandblasted.png,
             assets/img/mobile/huaweip9/buy_panel_hero_2_sandblasted.png
-        </IMAGE>
+        </PIC>
     </MOBILE>
 	<MOBILE>
 		<NAME>Nokia Lumia 1520</NAME>
@@ -118,11 +118,11 @@
 		<BACKCAM>20 MP Carl Zeiss Optics , Tessar Full HD 1080p</BACKCAM>
 		<BATTARY>3400 mAh</BATTARY>
 		<OTHER>ฟรีพื้นที่เก็บข้อมูลขนาด 7 GB บน Onedrive</OTHER>
-		<IMAGE>
+		<PIC>
 			assets/img/mobile/huaweip9/Lumia-Yellow.png
 			assets/img/mobile/huaweip9/Lumia-Red.png
 			assets/img/mobile/huaweip9/Lumia-White.png
 			assets/img/mobile/huaweip9/Lumia-Black.png
-		</IMAGE>
+		</PIC>
 	</MOBILE>
 </CATALOG>
