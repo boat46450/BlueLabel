@@ -10,9 +10,9 @@
         <SHIP>Octa-core (2.3GHz Quad + 1.7GHz Quad), 64 bit, 10nm processor</SHIP>
         <SCREEN>5.8" Quad HD+ Super AMOLED 2960x1440 570ppi</SCREEN>
         <FRONTCAM>8MP AF F1.7 Aperture Pixel size: 1.22µmSensor size: 1/3.6" FOV: 80 Wide selfie</FRONTCAM>
-        <BACKCAM>Dual Pixel 12MP AF OIS (Optical Image Stabilization) F1.7 Aperture Pixel size: 1.4µm Sensor size: 1/2.55" </BACKCAM>
+        <BACKCAM>Dual Pixel 12MP AF OIS (Optical Image Stabilization) F1.7 Aperture Pixel size: 1.4µm Sensor size: 1/2.55"</BACKCAM>
         <BATTARY>3,000 mAh</BATTARY>
-        <OTHER>สแกนม่านตา , กันน้ำ , กันฝุ่น</OTHER>
+        <OTHER>สแกนม่านตา,กันน้ำ,กันฝุ่น</OTHER>
         <IMAGE>
 			assets/img/mobile/SSGS8/S8-Black.png,
 			assets/img/mobile/SSGS8/S8-Pink.png,
@@ -67,9 +67,9 @@
 		<OS>iOS10</OS>
 		<SIZE>123.8 x 58.6 x 7.6 มิลลิเมตร </SIZE>
 		<MEMORY>32,128</MEMORY>
-		<PRICE>16800 , 20800</PRICE>
+		<PRICE>16800,20800</PRICE>
 		<COLOR>Sliver,Gold,Space Gray,Rose Gold</COLOR>
-		<SHIP>A9 พร้อมสถาปัตรยากรรม 64 บิต โปรเซสเซอร์ร่วม M9 สำหรับการประมวลผลการเคลื่อนไหวในตัว </SHIP>
+		<SHIP>A9 พร้อมสถาปัตรยากรรม 64 บิต โปรเซสเซอร์ร่วม M9 สำหรับการประมวลผลการเคลื่อนไหวในตัว</SHIP>
 		<SCREEN>หน้าจอ 4 นิ้ว แบบ Retina Display ความละเอียด 1136 x 640 พิกเซลที่ 326 ppi</SCREEN>
 		<BACKCAM>กล้องความละเอียด 12 เมกะพิกเซล รูรับแสงขนาด f/2.2</BACKCAM>
 		<FRONTCAM>กล้องความละเอียด 1.2 เมกะพิกเซล รูปรับแสงขนาด f/2.4</FRONTCAM>
@@ -87,10 +87,10 @@
         <SIZE>145 x 70.9 x 6.95 มิลลิเมตร</SIZE>
         <MEMORY>32</MEMORY>
         <PRICE>16900</PRICE>
-        <COLOR>Haze gold,Ceramic white,Rose Gold,Prestige Gold,Titanium grey,Mystic silver,Blue,Red </COLOR>
+        <COLOR>Haze gold,Ceramic white,Rose Gold,Prestige Gold,Titanium grey,Mystic silver,Blue,Red</COLOR>
         <SHIP>Octa-core (4x2.5 GHz Cortex-A72, 4x1.8 GHz Cortex-A53), HiSilicon Kirin 955 (64-bit)</SHIP>
         <SCREEN>หน้าจอ 5.2" FHD, 2.5D ความละเอียด 1080p (1920 x 1080), 16.7M colors</SCREEN>
-        <FRONTCAM>กล้องความละเอียด 8MP รูรับแสงขนาด ƒ/2.4 </FRONTCAM>
+        <FRONTCAM>กล้องความละเอียด 8MP รูรับแสงขนาด ƒ/2.4</FRONTCAM>
         <BACKCAM>Dual 12 MP, f/2.2, 27 mm, Leica optics, phase detection, laser autofocus, dual-LED (dual tone) flash</BACKCAM>
         <BATTARY>3000 mAh</BATTARY>
         <OTHER>ทำให้มีตัวเครื่องที่สวยงาม ด้วยวิธี diamond-cut edges รอบตัวเครื่อง ด้วยวัสดุอะลูมิเนียมแบบ unibody ที่ใช้ในการสร้างยานอวกาศ</OTHER>
