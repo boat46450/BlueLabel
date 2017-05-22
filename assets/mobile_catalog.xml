@@ -59,7 +59,7 @@
           assets/img/mobile/iPhone6/Iphone6.png,
           assets/img/mobile/iPhone6/gold.png,
           assets/img/mobile/iPhone6/silver.png,
-          assets/img/mobile/iPhone6/spacegray.png,
+          assets/img/mobile/iPhone6/spacegray.png
         </IMAGE>
     </MOBILE>
     <MOBILE>
@@ -75,9 +75,9 @@
 		<FRONTCAM>กล้องความละเอียด 1.2 เมกะพิกเซล รูปรับแสงขนาด f/2.4</FRONTCAM>
 		<BATTARY>1624 mAh</BATTARY>
 		<IMAGE>
-			assets/img/mobile/iPhoneSE/iphonese-silver.png
-			assets/img/mobile/iPhoneSE/iphonese-gold.png
-			assets/img/mobile/iPhoneSE/iphonese-gray.png
+			assets/img/mobile/iPhoneSE/iphonese-silver.png,
+			assets/img/mobile/iPhoneSE/iphonese-gold.png,
+			assets/img/mobile/iPhoneSE/iphonese-gray.png,
 			assets/img/mobile/iPhoneSE/iphonese-rosegold.png
 		</IMAGE>
 	</MOBILE>
