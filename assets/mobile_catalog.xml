@@ -5,21 +5,15 @@
         <OS>Android 7.0 (Nougat)</OS>
         <SIZE>148.9 x 68.1 x 8 มิลลิเมตร</SIZE>
         <MEMORY>64</MEMORY>
-        <PRICE>25110</PRICE>
+        <PRICE></PRICE>
         <COLOR>Midnight Black,Orchid Gray,Coral Blue,Arctic Silver,Maple Gold</COLOR>
         <SHIP>Octa-core (2.3GHz Quad + 1.7GHz Quad), 64 bit, 10nm processor</SHIP>
         <SCREEN>5.8" Quad HD+ Super AMOLED 2960x1440 570ppi</SCREEN>
         <FRONTCAM>8MP AF F1.7 Aperture Pixel size: 1.22µmSensor size: 1/3.6" FOV: 80 Wide selfie</FRONTCAM>
         <BACKCAM>Dual Pixel 12MP AF OIS (Optical Image Stabilization) F1.7 Aperture Pixel size: 1.4µm Sensor size: 1/2.55" </BACKCAM>
         <BATTARY>3,000 mAh</BATTARY>
-        <IMAGE>
-			assets/img/mobile/SSGS8/S8-Black.png,
-			assets/img/mobile/SSGS8/S8-Pink.png,
-			assets/img/mobile/SSGS8/S8-Blue.png,
-			assets/img/mobile/SSGS8/S8-White.png,
-			assets/img/mobile/SSGS8/S8-Gold.png
-		</IMAGE>
-		<OTHER>สแกนม่านตา , กันน้ำ , กันฝุ่น</OTHER>
+        <OTHER></OTHER>
+        <IMAGE></IMAGE>
     </MOBILE>
     <MOBILE>
         <NAME>iPhone7</NAME>
@@ -43,6 +37,26 @@
         </IMAGE>
     </MOBILE>
     <MOBILE>
+        <NAME>iPhone 6</NAME>
+        <OS>IOS 10</OS>
+        <SIZE>138.1 x 67 x 6.9 มิลลิเมตร</SIZE>
+        <MEMORY>16,32,64,128</MEMORY>
+        <PRICE>19900,15500,23900,31000</PRICE>
+        <COLOR>Space Gray, Silver, Gold</COLOR>
+        <SHIP>A9 พร้อมสถาปัตรยากรรม 64 บิต โปรเซสเซอร์ร่วม M9 สำหรับการประมวลผลการเคลื่อนไหวในตัว</SHIP>
+        <SCREEN>หน้าจอกว้าง 4.7 นิ้ว ระบบสัมผัส Multi-Touch ความละเอียด 750 x 1334 พิกเซล (326 ppi)</SCREEN>
+        <FRONTCAM> ความละเอียด 1.2 เมกะพิกเซล รูรับแสงขนาด ƒ/2.2</FRONTCAM>
+        <BACKCAM> กล้องดิจิตอล 8 ล้านพิกเซล (Digital Camera) รูรับแสงขนาด ƒ/2.2</BACKCAM>
+        <BATTARY>1,810 mAh</BATTARY>
+        <OTHER>ผลิตจากวัสดุที่ปราศจาก PVC,นิกเกิลบนพื้นผิวผลิตภัณฑ์,แอนติโมนี,ไตรออกไซด์</OTHER>
+        <IMAGE>
+          assets/img/mobile/iPhone6/Iphone6.png,
+          assets/img/mobile/iPhone6/gold.png,
+          assets/img/mobile/iPhone6/silver.png,
+          assets/img/mobile/iPhone6/spacegray.png,
+        </IMAGE>
+    </MOBILE>
+    <MOBILE>
 		<NAME>iPhone SE</Name>
 		<OS>iOS10</OS>
 		<SIZE>123.8 x 58.6 x 7.6 มิลลิเมตร </SIZE>
@@ -54,7 +68,6 @@
 		<BACKCAM>กล้องความละเอียด 12 เมกะพิกเซล รูรับแสงขนาด f/2.2</BACKCAM>
 		<FRONTCAM>กล้องความละเอียด 1.2 เมกะพิกเซล รูปรับแสงขนาด f/2.4</FRONTCAM>
 		<BATTERY>1624 mAh</BATTERY>
-        <OTHER>-</OTHER>
 		<IMAGE>
 			assets/img/mobile/iPhoneSE/iphonese-silver.png
 			assets/img/mobile/iPhoneSE/iphonese-gold.png
@@ -64,14 +77,14 @@
 	</MOBILE>
     <MOBILE>
         <NAME>Huawei P9</NAME>
-        <OS>Android 7.0 (Nougat)</OS>   	
+        <OS>Android 7.0 (Nougat)</OS>
         <SIZE>145 x 70.9 x 6.95 มิลลิเมตร</SIZE>
         <MEMORY>32</MEMORY>
         <PRICE>16900</PRICE>
         <COLOR>Haze gold,Ceramic white,Rose Gold,Prestige Gold,Titanium grey,Mystic silver,Blue,Red </COLOR>
         <SHIP>Octa-core (4x2.5 GHz Cortex-A72, 4x1.8 GHz Cortex-A53), HiSilicon Kirin 955 (64-bit)</SHIP>
         <SCREEN>หน้าจอ 5.2" FHD, 2.5D ความละเอียด 1080p (1920 x 1080), 16.7M colors</SCREEN>
-        <FRONTCAM>กล้องความละเอียด 8MP รูรับแสงขนาด ƒ/2.4 </FRONTCAM> 
+        <FRONTCAM>กล้องความละเอียด 8MP รูรับแสงขนาด ƒ/2.4 </FRONTCAM>
         <BACKCAM>Dual 12 MP, f/2.2, 27 mm, Leica optics, phase detection, laser autofocus, dual-LED (dual tone) flash</BACKCAM>
         <BATTARY>3000 mAh</BATTARY>
         <OTHER>ทำให้มีตัวเครื่องที่สวยงาม ด้วยวิธี diamond-cut edges รอบตัวเครื่อง ด้วยวัสดุอะลูมิเนียมแบบ unibody ที่ใช้ในการสร้างยานอวกาศ</OTHER>
