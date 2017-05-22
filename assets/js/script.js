@@ -36,7 +36,7 @@ $(document).ready(function(){
         success: function(result) {
             console.log("success");
             var $result = $(result);
-            for(var i = 0; i < 2; i++){
+            for(var i = 0; i < product.length; i++){
                 $(".name:eq(" + i + ")").text(getName($result,i));
                 $(".os:eq(" + i + ")").text("OS : " + getOs($result,i));
                 $(".size:eq(" + i + ")").text("ขนาด : " + getSize($result,i));
