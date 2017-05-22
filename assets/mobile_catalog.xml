@@ -106,18 +106,18 @@
         </IMAGE>
     </MOBILE>
 	<MOBILE>
-		<NAME>Nokia P1</NAME>
-		<OS>Android 7.0 Nougat</OS>
-		<SIZE></SIZE>
-		<MEMORY></MEMORY>
-		<PRICE></PRICE>
+		<NAME>Nokia Lumia 1520</NAME>
+		<OS>Windows Phone 8</OS>
+		<SIZE>162.8x85.4x8.7</SIZE>
+		<MEMORY>32</MEMORY>
+		<PRICE>13900</PRICE>
 		<COLOR></COLOR>
-		<SHIP></SHIP>
-		<SCREEN></SCREEN>
-		<FRONTCAM></FRONTCAM>
-		<BACKCAM></BACKCAM>
-		<BATTARY></BATTARY>
-		<OTHER></OTHER>
+		<SHIP>Comming Soon</SHIP>
+		<SCREEN>Comming Soon</SCREEN>
+		<FRONTCAM>Comming Soon</FRONTCAM>
+		<BACKCAM>Comming Soon</BACKCAM>
+		<BATTARY>Comming Soon</BATTARY>
+		<OTHER>Comming Soon</OTHER>
 		<IMAGE></IMAGE>
 	</MOBILE>
 </CATALOG>
