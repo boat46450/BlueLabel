@@ -300,7 +300,30 @@ $(document).ready(function(){
     });
 
     // onchange price
-    
+    $("#ssgs8color").change(function(){
+        var temp = $("#ssgs8color option:selected").index();
+        $("#ssgs8p").attr("src", ssgs8pic[temp]);
+    });
+    $("#ip7color").change(function(){
+        var temp = $("#ip7color option:selected").index();
+        $("#ip7p").attr("src", ip7pic[temp]);
+    });
+    $("#ip6color").change(function(){
+        var temp = $("#ip6color option:selected").index();
+        $("#ip6p").attr("src", ip6pic[temp]);
+    });
+    $("#ipsecolor").change(function(){
+        var temp = $("#ipsecolor option:selected").index();
+        $("#ipsep").attr("src", ipsepic[temp]);
+    });
+    $("#hp9color").change(function(){
+        var temp = $("#hp9color option:selected").index();
+        $("#hp9p").attr("src", hp9pic[temp]);
+    });
+    $("#nl1520color").change(function(){
+        var temp = $("#nl1520color option:selected").index();
+        $("#nl1520p").attr("src", nl1520pic[temp]);
+    });
 });
 
 // function for AJAX
