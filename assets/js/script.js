@@ -29,28 +29,31 @@ $(document).ready(function(){
     console.log("START");
     //AJAX
     $.ajax({
+        type: "POST",
         url: "assets/mobile_catalog.xml",
-        success: function(result){
+        contentType: "text/xml",
+        dataType: "text",
+        success: function(result) {
             console.log("success");
             var $result = $(result);
             for(var i = 0; i < 2; i++){
                 $(".name:eq(" + i + ")").text(getName($result,i));
                 $(".os:eq(" + i + ")").text("OS : " + getOs($result,i));
-                $(".size:eq(" + i + ")").text("ขนาด :" + getSize($result,i));
-                $(".ship:eq(" + i + ")").text("Ship :" + getShip($result,i));
-                $(".screen:eq(" + i + ")").text("หน้าจอ :" + getScreen($result,i));
-                $(".frontcam:eq(" + i + ")").text("กล้องหน้า :" + getFrontcam($result,i));
-                $(".backcam:eq(" + i + ")").text("กล้องหลัง :" + getBackcam($result,i));
-                $(".battary:eq(" + i + ")").text("แบตเตอร์รี่ :" + getBattary($result,i));
-                $(".other:eq(" + i + ")").text("อื่นๆ :" + getOther($result,i));
+                $(".size:eq(" + i + ")").text("ขนาด : " + getSize($result,i));
+                $(".ship:eq(" + i + ")").text("Ship : " + getShip($result,i));
+                $(".screen:eq(" + i + ")").text("หน้าจอ : " + getScreen($result,i));
+                $(".frontcam:eq(" + i + ")").text("กล้องหน้า : " + getFrontcam($result,i));
+                $(".backcam:eq(" + i + ")").text("กล้องหลัง : " + getBackcam($result,i));
+                $(".battary:eq(" + i + ")").text("แบตเตอร์รี่ : " + getBattary($result,i));
+                $(".other:eq(" + i + ")").text("อื่นๆ : " + getOther($result,i));
                 
                 var optionMem = "";
 
                 switch(i)   {
                     case 0:
                         ssgs8mem = getMemory($result,i);
-                        for (var j = 0; j < ssgs8mem; i++) {
-                            optionMem += "<option value=" + ssgs8mem[i] + ">" + i + "GB</option>";
+                        for (var j = 0; j < ssgs8mem.length; j++) {
+                            optionMem += "<option value=" + ssgs8mem[j] + ">" + ssgs8mem[j] + "GB</option>";
                         }
                         $("#ssgs8mem").append(optionMem);
                         ssgs8pric = getPrice($result,i);
