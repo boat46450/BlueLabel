@@ -112,12 +112,17 @@
 		<MEMORY>32</MEMORY>
 		<PRICE>13900</PRICE>
 		<COLOR>Yellow,Red,White,Black</COLOR>
-		<SHIP>Comming Soon</SHIP>
-		<SCREEN>Comming Soon</SCREEN>
-		<FRONTCAM>Comming Soon</FRONTCAM>
-		<BACKCAM>Comming Soon</BACKCAM>
-		<BATTARY>Comming Soon</BATTARY>
-		<OTHER>Comming Soon</OTHER>
-		<IMAGE></IMAGE>
+		<SHIP>Qualcomm MSM8974 Snapdragon 800</SHIP>
+		<SCREEN>Full HD 1080 (1920x1080) กว้าง 6.0 นิ้ว 368ppi </SCREEN>
+		<FRONTCAM>1.2 MP (1280x960)</FRONTCAM>
+		<BACKCAM>20 MP Carl Zeiss Optics , Tessar Full HD 1080p</BACKCAM>
+		<BATTARY>3400 mAh</BATTARY>
+		<OTHER>ฟรีพื้นที่เก็บข้อมูลขนาด 7 GB บน Onedrive</OTHER>
+		<IMAGE>
+			assets/img/mobile/huaweip9/Lumia-Yellow.png
+			assets/img/mobile/huaweip9/Lumia-Red.png
+			assets/img/mobile/huaweip9/Lumia-White.png
+			assets/img/mobile/huaweip9/Lumia-Black.png
+		</IMAGE>
 	</MOBILE>
 </CATALOG>
