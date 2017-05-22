@@ -29,19 +29,57 @@ $(document).ready(function(){
     //AJAX
     $.ajax({url: "assets/mobile_catalog.xml", success: function(result){
         var $result = $(result);
-        $(".name:eq(0)").text(getName($result,0));
-        $(".os:eq(0)").text("OS : " + getOs($result,0));
-        $(".size:eq(0)").text("ขนาด :" + getSize($result,0));
-        ssgs8mem = getMemory($result,0);
-        ssgs8pric = getPrice($result,0);
-        ssgs8color = getColor($result,0);
-        $(".ship:eq(0)").text("Ship :" + getShip($result,0));
-        $(".screen:eq(0)").text("หน้าจอ :" + getScreen($result,0));
-        $(".frontcam:eq(0)").text("กล้องหน้า :" + getFrontcam($result,0));
-        $(".backcam:eq(0)").text("กล้องหลัง :" + getBackcam($result,0));
-        $(".battary:eq(0)").text("แบตเตอร์รี่ :" + getBattary($result,0));
-        $(".other:eq(0)").text("อื่นๆ :" + getOther($result,0));
-        ssgs8pic = getOther($result,0);
+        for(var i = 0; i < 2; i++){
+            $(".name:eq(" + i + ")").text(getName($result,i));
+            $(".os:eq(" + i + ")").text("OS : " + getOs($result,i));
+            $(".size:eq(" + i + ")").text("ขนาด :" + getSize($result,i));
+            $(".ship:eq(" + i + ")").text("Ship :" + getShip($result,i));
+            $(".screen:eq(" + i + ")").text("หน้าจอ :" + getScreen($result,i));
+            $(".frontcam:eq(" + i + ")").text("กล้องหน้า :" + getFrontcam($result,i));
+            $(".backcam:eq(" + i + ")").text("กล้องหลัง :" + getBackcam($result,i));
+            $(".battary:eq(" + i + ")").text("แบตเตอร์รี่ :" + getBattary($result,i));
+            $(".other:eq(" + i + ")").text("อื่นๆ :" + getOther($result,i));
+            switch(i)   {
+                case 0:
+                    ssgs8mem = getMemory($result,i);
+                    ssgs8pric = getPrice($result,i);
+                    ssgs8color = getColor($result,i);
+                    ssgs8pic = getOther($result,i);
+                    break;
+                case 1:
+                    ip7mem = getMemory($result,i);
+                    ip7pric = getPrice($result,i);
+                    ip7color = getColor($result,i);
+                    ip7pic = getOther($result,i);
+                    break;
+                case 2:
+                    ip6mem = getMemory($result,i);
+                    ip6pric = getPrice($result,i);
+                    ip6color = getColor($result,i);
+                    ip6pic = getOther($result,i);
+                    break;
+                case 3:
+                    ipsemem = getMemory($result,i);
+                    ipsepric = getPrice($result,i);
+                    ipsecolor = getColor($result,i);
+                    ipsepic = getOther($result,i);
+                    break;
+                case 4:
+                    hp9mem = getMemory($result,i);
+                    hp9pric = getPrice($result,i);
+                    hp9color = getColor($result,i);
+                    hp9pic = getOther($result,i);
+                    break;
+                case 4:
+                    np1mem = getMemory($result,i);
+                    np1pric = getPrice($result,i);
+                    np1color = getColor($result,i);
+                    np1pic = getOther($result,i);
+                    break;
+            }
+            
+        }
+        
     }});
 
     //Main Function
