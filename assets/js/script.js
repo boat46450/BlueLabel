@@ -64,8 +64,8 @@ $(document).ready(function(){
                             optionCol += "<option value=" + ssgs8color[j] + ">" + ssgs8color[j] + "</option>";
                         }
                         $("#ssgs8color").append(optionCol);
-                        ssgs8pic = getOther($result,i);
-                        $("#ssgs8p").attr("src", ""+ssgs8pic[0]);
+                        ssgs8pic = getImage($result,i);
+                        $("#ssgs8p").attr("src", ssgs8pic[0]);
                         break;
                     case 1:
                         ip7mem = getMemory($result,i);
@@ -79,7 +79,7 @@ $(document).ready(function(){
                             optionCol += "<option value=" + ip7color[j] + ">" + ip7color[j] + "</option>";
                         }
                         $("#ip7color").append(optionCol);
-                        ip7pic = getOther($result,i);
+                        ip7pic = getImage($result,i);
                         break;
                     case 2:
                         ip6mem = getMemory($result,i);
@@ -93,7 +93,7 @@ $(document).ready(function(){
                             optionCol += "<option value=" + ip6color[j] + ">" + ip6color[j] + "</option>";
                         }
                         $("#ip6color").append(optionCol);
-                        ip6pic = getOther($result,i);
+                        ip6pic = getImage($result,i);
                         break;
                     case 3:
                         ipsemem = getMemory($result,i);
@@ -107,7 +107,7 @@ $(document).ready(function(){
                             optionCol += "<option value=" + ipsecolor[j] + ">" + ipsecolor[j] + "</option>";
                         }
                         $("#ipsecolor").append(optionCol);
-                        ipsepic = getOther($result,i);
+                        ipsepic = getImage($result,i);
                         break;
                     case 4:
                         hp9mem = getMemory($result,i);
@@ -121,7 +121,7 @@ $(document).ready(function(){
                             optionCol += "<option value=" + hp9color[j] + ">" + hp9color[j] + "</option>";
                         }
                         $("#hp9color").append(optionCol);
-                        hp9pic = getOther($result,i);
+                        hp9pic = getImage($result,i);
                         break;
                     case 5:
                         nl1520mem = getMemory($result,i);
@@ -135,7 +135,7 @@ $(document).ready(function(){
                             optionCol += "<option value=" + nl1520color[j] + ">" + nl1520color[j] + "</option>";
                         }
                         $("#nl1520color").append(optionCol);
-                        nl1520pic = getOther($result,i);
+                        nl1520pic = getImage($result,i);
                         break;
                 }
                 
@@ -334,6 +334,6 @@ function getOther(xml,i) {
     return xml.find("OTHER:eq(" + i + ")").text();
 }
 function getImage(xml,i) {
-    var image = xml.find("IMAGE:eq(" + i + ")").text();
+    var image = xml.find("PIC:eq(" + i + ")").text();
     return image.split(",");
 }
