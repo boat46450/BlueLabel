@@ -24,6 +24,7 @@ var nl1520mem = "";
 var nl1520pric = "";
 var nl1520color = "";
 var nl1520pic = "";
+var cart = [];
 
 $(document).ready(function(){
     console.log("START");
@@ -283,6 +284,7 @@ $(document).ready(function(){
         e.stopPropagation();
     });
     $('.bcart').click(function (e) {
+        $('tbody').html(writeCart());
         $(position).addClass('flow');
         $(position).removeClass('front');
         $('#cart').addClass('front');
@@ -350,6 +352,104 @@ $(document).ready(function(){
         var temp = $("#nl1520mem option:selected").index();
         $("#nl1520price").html("ราคา <span id='nl1520pr'>" + nl1520pric[temp] + "</span> บาท");
     });
+
+    // add cart button
+    $('#ssgs8cart').click(function (e) {
+        var name = "Samsung Galaxy S8";
+        var color = ssgs8color[$("#ssgs8color option:selected").index()];
+        var mem = $("#ssgs8mem").val();
+        var count = $("#ssgs8count").val();
+        var price = parseInt(count)*parseInt(ssgs8pric[$("#ssgs8mem option:selected").index()]);
+        var mobile = {
+            name: name,
+            color: color,
+            mem: mem,
+            count: count,
+            price: price 
+        };
+        cart.push(mobile);
+        e.stopPropagation();
+    });
+    $('#ip7cart').click(function (e) {
+        var name = "iPhone7";
+        var color = ip7color[$("#ip7color option:selected").index()];
+        var mem = $("#ip7mem").val();
+        var count = $("#ip7count").val();
+        var price = parseInt(count)*parseInt(ip7pric[$("#ip7mem option:selected").index()]);
+        var mobile = {
+            name: name,
+            color: color,
+            mem: mem,
+            count: count,
+            price: price 
+        };
+        cart.push(mobile);
+        e.stopPropagation();
+    });
+    $('#ip6cart').click(function (e) {
+        var name = "iPhone6";
+        var color = ip6color[$("#ip6color option:selected").index()];
+        var mem = $("#ip6mem").val();
+        var count = $("#ip6count").val();
+        var price = parseInt(count)*parseInt(ip6pric[$("#ip6mem option:selected").index()]);
+        var mobile = {
+            name: name,
+            color: color,
+            mem: mem,
+            count: count,
+            price: price 
+        };
+        cart.push(mobile);
+        e.stopPropagation();
+    });
+    $('#ipsecart').click(function (e) {
+        var name = "iPhoneSE";
+        var color = ipsecolor[$("#ipsecolor option:selected").index()];
+        var mem = $("#ipsemem").val();
+        var count = $("#ipsecount").val();
+        var price = parseInt(count)*parseInt(ipsepric[$("#ipsemem option:selected").index()]);
+        var mobile = {
+            name: name,
+            color: color,
+            mem: mem,
+            count: count,
+            price: price 
+        };
+        cart.push(mobile);
+        e.stopPropagation();
+    });
+    $('#hp9cart').click(function (e) {
+        var name = "Huawei P9";
+        var color = hp9color[$("#hp9color option:selected").index()];
+        var mem = $("#hp9mem").val();
+        var count = $("#hp9count").val();
+        var price = parseInt(count)*parseInt(hp9pric[$("#hp9mem option:selected").index()]);
+        var mobile = {
+            name: name,
+            color: color,
+            mem: mem,
+            count: count,
+            price: price 
+        };
+        cart.push(mobile);
+        e.stopPropagation();
+    });
+    $('#nl1520cart').click(function (e) {
+        var name = "Nokia Lumia 1520";
+        var color = nl1520color[$("#nl1520color option:selected").index()];
+        var mem = $("#nl1520mem").val();
+        var count = $("#nl1520count").val();
+        var price = parseInt(count)*parseInt(nl1520pric[$("#nl1520mem option:selected").index()]);
+        var mobile = {
+            name: name,
+            color: color,
+            mem: mem,
+            count: count,
+            price: price 
+        };
+        cart.push(mobile);
+        e.stopPropagation();
+    });
 });
 
 // function for AJAX
@@ -395,4 +495,37 @@ function getOther(xml,i) {
 function getImage(xml,i) {
     var image = xml.find("PIC:eq(" + i + ")").text();
     return image.split(",");
+}
+
+//cart
+function writeCart(){
+    var write = "";
+    for(var i = 0; i < cart.length; i++){
+        write += "<tr>";
+        write += "<td class='text-center'>" + (i+1) + "</td>";
+        write += "<td>" + cart[i].name + "</td>";
+        write += "<td class='text-center'>" + cart[i].color + "</td>";
+        write += "<td class='text-center'>" + cart[i].mem + " GB</td>";
+        write += "<td class='text-center'>" + cart[i].count + "</td>";
+        write += "<td class='text-center'>" + cart[i].price + " บาท</td>";
+        write += "<td class='text-center'><buton type='button' class='btn btn-danger' onclick=removeCart(" + i + ")>remove</td>";
+        write += "</tr>";
+    }
+    write += "<tr>";
+    write += "<td colspan='7' class='text-right'><h2>รวม " + totalCart() + " บาท</h2></td>";
+    write += "</tr>";
+    return write;
+}
+// total price
+function totalCart(){
+    var total = 0;
+    for(var i = 0; i < cart.length; i++){
+        total += parseInt(cart[i].price);
+    }
+    return total;
+}
+// remove from cart
+function removeCart(i){
+    cart.splice(i, 1);
+    $('tbody').html(writeCart());
 }
