@@ -56,10 +56,9 @@
         <BATTARY>1,810 mAh</BATTARY>
         <OTHER>ผลิตจากวัสดุที่ปราศจาก PVC,นิกเกิลบนพื้นผิวผลิตภัณฑ์,แอนติโมนี,ไตรออกไซด์</OTHER>
         <PIC>
-          assets/img/mobile/iPhone6/Iphone6.png,
-          assets/img/mobile/iPhone6/gold.png,
-          assets/img/mobile/iPhone6/silver.png,
-          assets/img/mobile/iPhone6/spacegray.png
+            assets/img/mobile/iPhone6/spacegray.png,
+            assets/img/mobile/iPhone6/gold.png,
+            assets/img/mobile/iPhone6/silver.png
         </PIC>
     </MOBILE>
     <MOBILE>
