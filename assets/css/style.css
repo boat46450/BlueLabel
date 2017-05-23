@@ -94,3 +94,9 @@ button:hover{
 .fa {
   font-size: 20px;
 }
+.yes {
+  display: inline;
+}
+.no {
+  display: none;
+}

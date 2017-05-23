@@ -27,7 +27,6 @@ var nl1520pic = "";
 var cart = [];
 
 $(document).ready(function(){
-    showIcon();
     console.log("START");
     //AJAX
     $.ajax({
@@ -542,18 +541,27 @@ function removeCart(i){
 // icon
 function showIcon(){
     if(position === "#home") {
-        $("#h").show();
-        $("#o").hide();
-        $("#c").hide();
+        $("#h").addClass("yes");
+        $("#o").addClass("no");
+        $("#c").addClass("no");
+        $("#h").removeClass("no");
+        $("#o").removeClass("yes");
+        $("#c").removeClass("yes");
     }
     else if(position === "#cart"){
-        $("#h").hide();
-        $("#o").hide();
-        $("#c").show();
+        $("#c").addClass("yes");
+        $("#h").addClass("no");
+        $("#o").addClass("no");
+        $("#c").removeClass("no");
+        $("#h").removeClass("yes");
+        $("#o").removeClass("yes");
     }
     else {
-        $("#h").hide();
-        $("#o").show();
-        $("#c").hide();
+        $("#o").addClass("yes");
+        $("#h").addClass("no");
+        $("#c").addClass("no");
+        $("#o").removeClass("no");
+        $("#h").removeClass("yes");
+        $("#c").removeClass("yes");
     }
 }
