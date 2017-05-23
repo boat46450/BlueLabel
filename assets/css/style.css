@@ -13,6 +13,14 @@ body{
   border-radius: 10px;
   box-shadow: 5px 5px 5px #ccc;
 }
+.product1{
+  text-indent: 50px;
+  background-color: #8c8c8c;
+  margin-bottom: 30px;;
+  text-shadow: 3px 2px 2px #606060;
+  color: rgb(238, 238, 238);
+  padding-bottom: 10px;
+}
 .banner{
   position: absolute;
   top: 0;
@@ -23,9 +31,6 @@ body{
 }
 .panel{
     border: 0px solid transparent;
-}
-.test.{
-  background-color: red;
 }
 .table{
   background-color: rgb(240, 240, 240);
@@ -41,6 +46,22 @@ body{
   border-color: #8c8c8c;
   background-color: rgb(140, 140, 140);
   text-shadow: 3px 2px 2px #606060;
+}
+button.btn-primary:hover{
+  background-color: #000 !important;
+  color: #fff !important;
+}
+button.btn-primary:active{
+  background-color: #000 !important;
+  color: #fff !important;
+}
+.bcart,.bhome{
+  color: #fff;
+  background-color: rgb(99, 99, 99);
+}
+.bcart:hover,.bhome:hover{
+  color: #fff;
+  background-color: rgb(99, 99, 99);
 }
 .panel-primary{
   border-color: rgba(200, 160, 149, 0);
