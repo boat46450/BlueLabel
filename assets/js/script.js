@@ -363,99 +363,111 @@ $(document).ready(function(){
 
     // add cart button
     $('#ssgs8cart').click(function (e) {
-        var name = "Samsung Galaxy S8";
-        var color = ssgs8color[$("#ssgs8color option:selected").index()];
-        var mem = $("#ssgs8mem").val();
-        var count = $("#ssgs8count").val();
-        var price = parseInt(count)*parseInt(ssgs8pric[$("#ssgs8mem option:selected").index()]);
-        var mobile = {
-            name: name,
-            color: color,
-            mem: mem,
-            count: count,
-            price: price 
-        };
-        cart.push(mobile);
+        if ($("#ssgs8count").val() != 0) {
+            var name = "Samsung Galaxy S8";
+            var color = ssgs8color[$("#ssgs8color option:selected").index()];
+            var mem = $("#ssgs8mem").val();
+            var count = $("#ssgs8count").val();
+            var price = parseInt(count)*parseInt(ssgs8pric[$("#ssgs8mem option:selected").index()]);
+            var mobile = {
+                name: name,
+                color: color,
+                mem: mem,
+                count: count,
+                price: price 
+            };
+            cart.push(mobile);
+        }
         e.stopPropagation();
     });
     $('#ip7cart').click(function (e) {
-        var name = "iPhone7";
-        var color = ip7color[$("#ip7color option:selected").index()];
-        var mem = $("#ip7mem").val();
-        var count = $("#ip7count").val();
-        var price = parseInt(count)*parseInt(ip7pric[$("#ip7mem option:selected").index()]);
-        var mobile = {
-            name: name,
-            color: color,
-            mem: mem,
-            count: count,
-            price: price 
-        };
-        cart.push(mobile);
+        if ($("#ip7count").val() != 0) {
+            var name = "iPhone7";
+            var color = ip7color[$("#ip7color option:selected").index()];
+            var mem = $("#ip7mem").val();
+            var count = $("#ip7count").val();
+            var price = parseInt(count)*parseInt(ip7pric[$("#ip7mem option:selected").index()]);
+            var mobile = {
+                name: name,
+                color: color,
+                mem: mem,
+                count: count,
+                price: price 
+            };
+            cart.push(mobile);
+        }
         e.stopPropagation();
     });
     $('#ip6cart').click(function (e) {
-        var name = "iPhone6";
-        var color = ip6color[$("#ip6color option:selected").index()];
-        var mem = $("#ip6mem").val();
-        var count = $("#ip6count").val();
-        var price = parseInt(count)*parseInt(ip6pric[$("#ip6mem option:selected").index()]);
-        var mobile = {
-            name: name,
-            color: color,
-            mem: mem,
-            count: count,
-            price: price 
-        };
-        cart.push(mobile);
+        if ($("#ip6count").val() != 0) {
+            var name = "iPhone6";
+            var color = ip6color[$("#ip6color option:selected").index()];
+            var mem = $("#ip6mem").val();
+            var count = $("#ip6count").val();
+            var price = parseInt(count)*parseInt(ip6pric[$("#ip6mem option:selected").index()]);
+            var mobile = {
+                name: name,
+                color: color,
+                mem: mem,
+                count: count,
+                price: price 
+            };
+            cart.push(mobile);
+        }
         e.stopPropagation();
     });
     $('#ipsecart').click(function (e) {
-        var name = "iPhoneSE";
-        var color = ipsecolor[$("#ipsecolor option:selected").index()];
-        var mem = $("#ipsemem").val();
-        var count = $("#ipsecount").val();
-        var price = parseInt(count)*parseInt(ipsepric[$("#ipsemem option:selected").index()]);
-        var mobile = {
-            name: name,
-            color: color,
-            mem: mem,
-            count: count,
-            price: price 
-        };
-        cart.push(mobile);
+        if ($("#ipsecount").val() != 0) {
+            var name = "iPhoneSE";
+            var color = ipsecolor[$("#ipsecolor option:selected").index()];
+            var mem = $("#ipsemem").val();
+            var count = $("#ipsecount").val();
+            var price = parseInt(count)*parseInt(ipsepric[$("#ipsemem option:selected").index()]);
+            var mobile = {
+                name: name,
+                color: color,
+                mem: mem,
+                count: count,
+                price: price 
+            };
+            cart.push(mobile);
+        }
         e.stopPropagation();
     });
     $('#hp9cart').click(function (e) {
-        var name = "Huawei P9";
-        var color = hp9color[$("#hp9color option:selected").index()];
-        var mem = $("#hp9mem").val();
-        var count = $("#hp9count").val();
-        var price = parseInt(count)*parseInt(hp9pric[$("#hp9mem option:selected").index()]);
-        var mobile = {
-            name: name,
-            color: color,
-            mem: mem,
-            count: count,
-            price: price 
-        };
-        cart.push(mobile);
+        if ($("#hp9count").val() != 0) {
+            var name = "Huawei P9";
+            var color = hp9color[$("#hp9color option:selected").index()];
+            var mem = $("#hp9mem").val();
+            var count = $("#hp9count").val();
+            var price = parseInt(count)*parseInt(hp9pric[$("#hp9mem option:selected").index()]);
+            var mobile = {
+                name: name,
+                color: color,
+                mem: mem,
+                count: count,
+                price: price 
+            };
+            cart.push(mobile);
+        }
         e.stopPropagation();
     });
     $('#nl1520cart').click(function (e) {
-        var name = "Nokia Lumia 1520";
-        var color = nl1520color[$("#nl1520color option:selected").index()];
-        var mem = $("#nl1520mem").val();
-        var count = $("#nl1520count").val();
-        var price = parseInt(count)*parseInt(nl1520pric[$("#nl1520mem option:selected").index()]);
-        var mobile = {
-            name: name,
-            color: color,
-            mem: mem,
-            count: count,
-            price: price 
-        };
-        cart.push(mobile);
+        if ($("#nl1520count").val() != 0) {
+            var name = "Nokia Lumia 1520";
+            var color = nl1520color[$("#nl1520color option:selected").index()];
+            var mem = $("#nl1520mem").val();
+            var count = $("#nl1520count").val();
+            var price = parseInt(count)*parseInt(nl1520pric[$("#nl1520mem option:selected").index()]);
+            var mobile = {
+                name: name,
+                color: color,
+                mem: mem,
+                count: count,
+                price: price 
+            };
+            cart.push(mobile);
+        }
         e.stopPropagation();
     });
 });
