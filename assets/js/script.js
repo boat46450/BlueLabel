@@ -185,7 +185,7 @@ $(document).ready(function(){
                 position = '#ssgs8';
                 showIcon();
             }, 100);
-        },2000);
+        },700);
         e.stopPropagation();
     });
     $('.bip7').click(function (e) {
@@ -202,7 +202,7 @@ $(document).ready(function(){
                 position = '#ip7';
                 showIcon();
             }, 100);
-        },2000);
+        },700);
         e.stopPropagation();
     });
     $('.bip6').click(function (e) {
@@ -219,7 +219,7 @@ $(document).ready(function(){
                 position = '#ip6';
                 showIcon();
             }, 100);
-        },2000);
+        },700);
         e.stopPropagation();
     });
     $('.bipse').click(function (e) {
@@ -236,7 +236,7 @@ $(document).ready(function(){
                 position = '#ipse';
                 showIcon();
             }, 100);
-        },2000);
+        },700);
         e.stopPropagation();
     });
     $('.bhp9').click(function (e) {
@@ -253,7 +253,7 @@ $(document).ready(function(){
                 position = '#hp9';
                 showIcon();
             }, 100);
-        },2000);
+        },700);
         e.stopPropagation();
     });
     $('.bnl1520').click(function (e) {
@@ -270,7 +270,7 @@ $(document).ready(function(){
                 position = '#nl1520';
                 showIcon();
             }, 100);
-        },2000);
+        },700);
         e.stopPropagation();
     });
     $('.bhome').click(function (e) {
@@ -287,7 +287,7 @@ $(document).ready(function(){
                 position = '#home';
                 showIcon();
             }, 100);
-        },2000);
+        },700);
         e.stopPropagation();
     });
     $('.bcart').click(function (e) {
@@ -305,7 +305,7 @@ $(document).ready(function(){
                 position = '#cart';
                 showIcon();
             }, 100);
-        },2000);
+        },700);
         e.stopPropagation();
     });
 
