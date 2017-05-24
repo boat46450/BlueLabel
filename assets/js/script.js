@@ -376,7 +376,14 @@ $(document).ready(function(){
                 count: count,
                 price: price 
             };
-            cart.push(mobile);
+            arraySame = indexOfObjInArray(cart, {name: name, color: color, mem: mem});
+            if (arraySame != -1) {
+                cart[arraySame].count = parseInt(cart[arraySame].count) + parseInt(count);
+                cart[arraySame].price = parseInt(cart[arraySame].price) + price; 
+            }
+            else {
+                cart.push(mobile);
+            }
         }
         e.stopPropagation();
     });
@@ -394,7 +401,14 @@ $(document).ready(function(){
                 count: count,
                 price: price 
             };
-            cart.push(mobile);
+            arraySame = indexOfObjInArray(cart, {name: name, color: color, mem: mem});
+            if (arraySame != -1) {
+                cart[arraySame].count = parseInt(cart[arraySame].count) + parseInt(count);
+                cart[arraySame].price = parseInt(cart[arraySame].price) + price; 
+            }
+            else {
+                cart.push(mobile);
+            }
         }
         e.stopPropagation();
     });
@@ -412,7 +426,14 @@ $(document).ready(function(){
                 count: count,
                 price: price 
             };
-            cart.push(mobile);
+            arraySame = indexOfObjInArray(cart, {name: name, color: color, mem: mem});
+            if (arraySame != -1) {
+                cart[arraySame].count = parseInt(cart[arraySame].count) + parseInt(count);
+                cart[arraySame].price = parseInt(cart[arraySame].price) + price; 
+            }
+            else {
+                cart.push(mobile);
+            }
         }
         e.stopPropagation();
     });
@@ -430,7 +451,14 @@ $(document).ready(function(){
                 count: count,
                 price: price 
             };
-            cart.push(mobile);
+            arraySame = indexOfObjInArray(cart, {name: name, color: color, mem: mem});
+            if (arraySame != -1) {
+                cart[arraySame].count = parseInt(cart[arraySame].count) + parseInt(count);
+                cart[arraySame].price = parseInt(cart[arraySame].price) + price; 
+            }
+            else {
+                cart.push(mobile);
+            }
         }
         e.stopPropagation();
     });
@@ -448,7 +476,14 @@ $(document).ready(function(){
                 count: count,
                 price: price 
             };
-            cart.push(mobile);
+            arraySame = indexOfObjInArray(cart, {name: name, color: color, mem: mem});
+            if (arraySame != -1) {
+                cart[arraySame].count = parseInt(cart[arraySame].count) + parseInt(count);
+                cart[arraySame].price = parseInt(cart[arraySame].price) + price; 
+            }
+            else {
+                cart.push(mobile);
+            }
         }
         e.stopPropagation();
     });
@@ -466,11 +501,36 @@ $(document).ready(function(){
                 count: count,
                 price: price 
             };
-            cart.push(mobile);
+            arraySame = indexOfObjInArray(cart, {name: name, color: color, mem: mem});
+            if (arraySame != -1) {
+                cart[arraySame].count = parseInt(cart[arraySame].count) + parseInt(count);
+                cart[arraySame].price = parseInt(cart[arraySame].price) + price; 
+            }
+            else {
+                cart.push(mobile);
+            }
         }
         e.stopPropagation();
     });
 });
+
+function indexOfObjInArray(myArray, object, isStartFromLast, startFrom) {
+    console.log(!startFrom);
+    console.log(!isStartFromLast);
+    startFrom = (!startFrom ? 0 : startFrom);
+
+    if (startFrom < myArray.length) {
+        for (var i = startFrom; (isStartFromLast ? i > -1 : i < myArray.length); (isStartFromLast ? i-- : i++)) {
+            var isSame = (object.name == myArray[i].name)
+                && (object.color == myArray[i].color)
+                && (object.mem == myArray[i].mem);
+            if (isSame) {
+                return i;
+            }
+        }
+    }
+    return -1;
+}
 
 // function for AJAX
 function getName(xml,i) {
