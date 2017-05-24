@@ -364,22 +364,17 @@ $(document).ready(function(){
     // add cart button
     $('#ssgs8cart').click(function (e) {
         if ($("#ssgs8count").val() != 0) {
-            var name = "Samsung Galaxy S8";
-            var color = ssgs8color[$("#ssgs8color option:selected").index()];
-            var mem = $("#ssgs8mem").val();
-            var count = $("#ssgs8count").val();
-            var price = parseInt(count)*parseInt(ssgs8pric[$("#ssgs8mem option:selected").index()]);
             var mobile = {
-                name: name,
-                color: color,
-                mem: mem,
-                count: count,
-                price: price 
+                name: "Samsung Galaxy S8",
+                color: ssgs8color[$("#ssgs8color option:selected").index()],
+                mem: $("#ssgs8mem").val(),
+                count: $("#ssgs8count").val(),
+                price: parseInt(count)*parseInt(ssgs8pric[$("#ssgs8mem option:selected").index()]) 
             };
-            arraySame = indexOfObjInArray(cart, {name: name, color: color, mem: mem});
+            arraySame = indexOfObjInArray(cart, {name: mobile.name, color: mobile.color, mem: mobile.mem});
             if (arraySame != -1) {
-                cart[arraySame].count = parseInt(cart[arraySame].count) + parseInt(count);
-                cart[arraySame].price = parseInt(cart[arraySame].price) + price; 
+                cart[arraySame].count = parseInt(cart[arraySame].count) + parseInt(mobile.count);
+                cart[arraySame].price = parseInt(cart[arraySame].price) + mobile.price; 
             }
             else {
                 cart.push(mobile);
@@ -389,22 +384,17 @@ $(document).ready(function(){
     });
     $('#ip7cart').click(function (e) {
         if ($("#ip7count").val() != 0) {
-            var name = "iPhone7";
-            var color = ip7color[$("#ip7color option:selected").index()];
-            var mem = $("#ip7mem").val();
-            var count = $("#ip7count").val();
-            var price = parseInt(count)*parseInt(ip7pric[$("#ip7mem option:selected").index()]);
             var mobile = {
-                name: name,
-                color: color,
-                mem: mem,
-                count: count,
-                price: price 
+                name: "iPhone7",
+                color: ip7color[$("#ip7color option:selected").index()],
+                mem: $("#ip7mem").val(),
+                count: $("#ip7count").val(),
+                price: parseInt(count)*parseInt(ip7pric[$("#ip7mem option:selected").index()]) 
             };
-            arraySame = indexOfObjInArray(cart, {name: name, color: color, mem: mem});
+            arraySame = indexOfObjInArray(cart, {name: mobile.name, color: mobile.color, mem: mobile.mem});
             if (arraySame != -1) {
-                cart[arraySame].count = parseInt(cart[arraySame].count) + parseInt(count);
-                cart[arraySame].price = parseInt(cart[arraySame].price) + price; 
+                cart[arraySame].count = parseInt(cart[arraySame].count) + parseInt(mobile.count);
+                cart[arraySame].price = parseInt(cart[arraySame].price) + mobile.price; 
             }
             else {
                 cart.push(mobile);
@@ -414,22 +404,17 @@ $(document).ready(function(){
     });
     $('#ip6cart').click(function (e) {
         if ($("#ip6count").val() != 0) {
-            var name = "iPhone6";
-            var color = ip6color[$("#ip6color option:selected").index()];
-            var mem = $("#ip6mem").val();
-            var count = $("#ip6count").val();
-            var price = parseInt(count)*parseInt(ip6pric[$("#ip6mem option:selected").index()]);
             var mobile = {
-                name: name,
-                color: color,
-                mem: mem,
-                count: count,
-                price: price 
+                name: "iPhone6",
+                color: ip6color[$("#ip6color option:selected").index()],
+                mem: $("#ip6mem").val(),
+                count: $("#ip6count").val(),
+                price: parseInt(count)*parseInt(ip6pric[$("#ip6mem option:selected").index()]) 
             };
-            arraySame = indexOfObjInArray(cart, {name: name, color: color, mem: mem});
+            arraySame = indexOfObjInArray(cart, {name: mobile.name, color: mobile.color, mem: mobile.mem});
             if (arraySame != -1) {
-                cart[arraySame].count = parseInt(cart[arraySame].count) + parseInt(count);
-                cart[arraySame].price = parseInt(cart[arraySame].price) + price; 
+                cart[arraySame].count = parseInt(cart[arraySame].count) + parseInt(mobile.count);
+                cart[arraySame].price = parseInt(cart[arraySame].price) + mobile.price; 
             }
             else {
                 cart.push(mobile);
@@ -439,22 +424,17 @@ $(document).ready(function(){
     });
     $('#ipsecart').click(function (e) {
         if ($("#ipsecount").val() != 0) {
-            var name = "iPhoneSE";
-            var color = ipsecolor[$("#ipsecolor option:selected").index()];
-            var mem = $("#ipsemem").val();
-            var count = $("#ipsecount").val();
-            var price = parseInt(count)*parseInt(ipsepric[$("#ipsemem option:selected").index()]);
             var mobile = {
-                name: name,
-                color: color,
-                mem: mem,
-                count: count,
-                price: price 
+                name: "iPhoneSE",
+                color: ipsecolor[$("#ipsecolor option:selected").index()],
+                mem: $("#ipsemem").val(),
+                count: $("#ipsecount").val(),
+                price: parseInt(count)*parseInt(ipsepric[$("#ipsemem option:selected").index()]) 
             };
-            arraySame = indexOfObjInArray(cart, {name: name, color: color, mem: mem});
+            arraySame = indexOfObjInArray(cart, {name: mobile.name, color: mobile.color, mem: mobile.mem});
             if (arraySame != -1) {
-                cart[arraySame].count = parseInt(cart[arraySame].count) + parseInt(count);
-                cart[arraySame].price = parseInt(cart[arraySame].price) + price; 
+                cart[arraySame].count = parseInt(cart[arraySame].count) + parseInt(mobile.count);
+                cart[arraySame].price = parseInt(cart[arraySame].price) + mobile.price; 
             }
             else {
                 cart.push(mobile);
@@ -464,22 +444,17 @@ $(document).ready(function(){
     });
     $('#hp9cart').click(function (e) {
         if ($("#hp9count").val() != 0) {
-            var name = "Huawei P9";
-            var color = hp9color[$("#hp9color option:selected").index()];
-            var mem = $("#hp9mem").val();
-            var count = $("#hp9count").val();
-            var price = parseInt(count)*parseInt(hp9pric[$("#hp9mem option:selected").index()]);
             var mobile = {
-                name: name,
-                color: color,
-                mem: mem,
-                count: count,
-                price: price 
+                name: "Huawei P9",
+                color: hp9color[$("#hp9color option:selected").index()],
+                mem: $("#hp9mem").val(),
+                count: $("#hp9count").val(),
+                price: parseInt(count)*parseInt(hp9pric[$("#hp9mem option:selected").index()])
             };
-            arraySame = indexOfObjInArray(cart, {name: name, color: color, mem: mem});
+            arraySame = indexOfObjInArray(cart, {name: mobile.name, color: mobile.color, mem: mobile.mem});
             if (arraySame != -1) {
-                cart[arraySame].count = parseInt(cart[arraySame].count) + parseInt(count);
-                cart[arraySame].price = parseInt(cart[arraySame].price) + price; 
+                cart[arraySame].count = parseInt(cart[arraySame].count) + parseInt(mobile.count);
+                cart[arraySame].price = parseInt(cart[arraySame].price) + mobile.price; 
             }
             else {
                 cart.push(mobile);
@@ -489,22 +464,17 @@ $(document).ready(function(){
     });
     $('#nl1520cart').click(function (e) {
         if ($("#nl1520count").val() != 0) {
-            var name = "Nokia Lumia 1520";
-            var color = nl1520color[$("#nl1520color option:selected").index()];
-            var mem = $("#nl1520mem").val();
-            var count = $("#nl1520count").val();
-            var price = parseInt(count)*parseInt(nl1520pric[$("#nl1520mem option:selected").index()]);
             var mobile = {
-                name: name,
-                color: color,
-                mem: mem,
-                count: count,
-                price: price 
+                name: "Nokia Lumia 1520",
+                color: nl1520color[$("#nl1520color option:selected").index()],
+                mem: $("#nl1520mem").val(),
+                count: $("#nl1520count").val(),
+                price: parseInt(count)*parseInt(nl1520pric[$("#nl1520mem option:selected").index()]) 
             };
-            arraySame = indexOfObjInArray(cart, {name: name, color: color, mem: mem});
+            arraySame = indexOfObjInArray(cart, {name: mobile.name, color: mobile.color, mem: mobile.mem});
             if (arraySame != -1) {
-                cart[arraySame].count = parseInt(cart[arraySame].count) + parseInt(count);
-                cart[arraySame].price = parseInt(cart[arraySame].price) + price; 
+                cart[arraySame].count = parseInt(cart[arraySame].count) + parseInt(mobile.count);
+                cart[arraySame].price = parseInt(cart[arraySame].price) + mobile.price; 
             }
             else {
                 cart.push(mobile);
