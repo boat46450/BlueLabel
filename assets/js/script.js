@@ -364,11 +364,12 @@ $(document).ready(function(){
     // add cart button
     $('#ssgs8cart').click(function (e) {
         if ($("#ssgs8count").val() != 0) {
+            var count = $("#ssgs8count").val();
             var mobile = {
                 name: "Samsung Galaxy S8",
                 color: ssgs8color[$("#ssgs8color option:selected").index()],
                 mem: $("#ssgs8mem").val(),
-                count: $("#ssgs8count").val(),
+                count: count,
                 price: parseInt(count)*parseInt(ssgs8pric[$("#ssgs8mem option:selected").index()]) 
             };
             arraySame = indexOfObjInArray(cart, {name: mobile.name, color: mobile.color, mem: mobile.mem});
@@ -384,11 +385,12 @@ $(document).ready(function(){
     });
     $('#ip7cart').click(function (e) {
         if ($("#ip7count").val() != 0) {
+            var count = $("#ipsecount").val();
             var mobile = {
                 name: "iPhone7",
                 color: ip7color[$("#ip7color option:selected").index()],
                 mem: $("#ip7mem").val(),
-                count: $("#ip7count").val(),
+                count: count,
                 price: parseInt(count)*parseInt(ip7pric[$("#ip7mem option:selected").index()]) 
             };
             arraySame = indexOfObjInArray(cart, {name: mobile.name, color: mobile.color, mem: mobile.mem});
@@ -404,11 +406,12 @@ $(document).ready(function(){
     });
     $('#ip6cart').click(function (e) {
         if ($("#ip6count").val() != 0) {
+            var count = $("#ipsecount").val();
             var mobile = {
                 name: "iPhone6",
                 color: ip6color[$("#ip6color option:selected").index()],
                 mem: $("#ip6mem").val(),
-                count: $("#ip6count").val(),
+                count: count,
                 price: parseInt(count)*parseInt(ip6pric[$("#ip6mem option:selected").index()]) 
             };
             arraySame = indexOfObjInArray(cart, {name: mobile.name, color: mobile.color, mem: mobile.mem});
@@ -424,11 +427,12 @@ $(document).ready(function(){
     });
     $('#ipsecart').click(function (e) {
         if ($("#ipsecount").val() != 0) {
+            var count = $("#ipsecount").val();
             var mobile = {
                 name: "iPhoneSE",
                 color: ipsecolor[$("#ipsecolor option:selected").index()],
                 mem: $("#ipsemem").val(),
-                count: $("#ipsecount").val(),
+                count: count,
                 price: parseInt(count)*parseInt(ipsepric[$("#ipsemem option:selected").index()]) 
             };
             arraySame = indexOfObjInArray(cart, {name: mobile.name, color: mobile.color, mem: mobile.mem});
@@ -444,6 +448,7 @@ $(document).ready(function(){
     });
     $('#hp9cart').click(function (e) {
         if ($("#hp9count").val() != 0) {
+            var count = $("#hp9count").val();
             var mobile = {
                 name: "Huawei P9",
                 color: hp9color[$("#hp9color option:selected").index()],
@@ -464,11 +469,12 @@ $(document).ready(function(){
     });
     $('#nl1520cart').click(function (e) {
         if ($("#nl1520count").val() != 0) {
+            var count = $("#nl1520count").val();
             var mobile = {
                 name: "Nokia Lumia 1520",
                 color: nl1520color[$("#nl1520color option:selected").index()],
                 mem: $("#nl1520mem").val(),
-                count: $("#nl1520count").val(),
+                count: count,
                 price: parseInt(count)*parseInt(nl1520pric[$("#nl1520mem option:selected").index()]) 
             };
             arraySame = indexOfObjInArray(cart, {name: mobile.name, color: mobile.color, mem: mobile.mem});
